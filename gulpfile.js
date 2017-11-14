@@ -30,7 +30,7 @@ var path = {
 var gulp = require('gulp'),
     sass = require('gulp-sass'), // for compilate scss to css
     rigger = require('gulp-rigger'), //rigger for including files in parent file
-    watch = require('gulp-watch'), // for watching your motions
+    // watch = require('gulp-watch'), // for watching your motions
     browserSync = require("browser-sync"),
     reload = browserSync.reload, //for created local server and tunnel to your network
     cssmin = require('gulp-minify-css'), //for js minimization
@@ -123,19 +123,31 @@ gulp.task('webserver', function () {
 
 //task who watching your motions
 gulp.task('watch', function(){
-    watch([path.watch.html], function(event, cb) {
+
+    gulp.watch([path.watch.html], function(event, cb) {
+        console.log(event);
+        console.log('html:build');
         gulp.start('html:build');
     });
-    watch([path.watch.style], function(event, cb) {
+
+    gulp.watch([path.watch.style], function(event, cb) {
+        console.log(event);
+        console.log('style:build');
         gulp.start('style:build');
     });
-    watch([path.watch.js], function(event, cb) {
+    gulp.watch([path.watch.js], function(event, cb) {
+        console.log(event);
+        console.log('js:build');
         gulp.start('js:build');
     });
-    watch([path.watch.img], function(event, cb) {
+    gulp.watch([path.watch.img], function(event, cb) {
+        console.log(event);
+        console.log('image:build');
         gulp.start('image:build');
     });
-    watch([path.watch.fonts], function(event, cb) {
+    gulp.watch([path.watch.fonts], function(event, cb) {
+        console.log(event);
+        console.log('fonts:build');
         gulp.start('fonts:build');
     });
 });
