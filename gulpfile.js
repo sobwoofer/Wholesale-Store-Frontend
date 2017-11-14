@@ -13,7 +13,11 @@ gulp.task('sass:watch', function () {
     gulp.watch('./sass/**/*.scss', ['sass']);
 });
 
+var rigger = require('gulp-rigger');
 
-gulp.task('default', function() {
-    // place code for your default task here
+gulp.task('default', function () {
+    gulp.src('app/*.js')
+        .pipe(rigger())
+        .pipe(gulp.dest('build/'));
 });
+
