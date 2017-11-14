@@ -1,0 +1,20 @@
+{
+  "name": "bootstrap-opt",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "",
+    "popper.js": "^1.12.8",
+    "bootstrap": "4.0.0-alpha.6",
+    "font-awesome": "4.*"
+  }
+}
