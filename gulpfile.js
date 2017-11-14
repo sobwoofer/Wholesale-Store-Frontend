@@ -105,6 +105,11 @@ gulp.task('clean', function (cb) {
     rimraf(path.clean, cb);
 });
 
+//task for configure web server
+gulp.task('webserver', function () {
+    browserSync(config);
+});
+
 
 //task who watching your motions
 gulp.task('watch', function(){
@@ -127,11 +132,7 @@ gulp.task('watch', function(){
 
 
 
-gulp.task('default', function () {
-    gulp.src('app/*.js')
-        .pipe(rigger())
-        .pipe(gulp.dest('build/'));
-});
+gulp.task('default', ['build', 'webserver', 'watch']);
 
 
 
