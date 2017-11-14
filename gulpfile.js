@@ -4,21 +4,24 @@ var path = {
         js: 'build/js/',
         css: 'build/css/',
         img: 'build/img/',
-        fonts: 'build/fonts/'
+        fonts: 'build/fonts/',
+        libs: 'build/libs/'
     },
     src: { //Paths from getting sources
         html: 'src/*.html',
         js: 'src/js/main.js',
         style: 'src/style/main.scss',
         img: 'src/img/**/*.*',
-        fonts: 'src/fonts/**/*.*'
+        fonts: 'src/fonts/**/*.*',
+        libs: 'bower_components/**/*.*'
     },
     watch: { //What kind of files and paths we want to watching.
         html: 'src/**/*.html',
         js: 'src/js/**/*.js',
         style: 'src/style/**/*.scss',
         img: 'src/img/**/*.*',
-        fonts: 'src/fonts/**/*.*'
+        fonts: 'src/fonts/**/*.*',
+        libs: 'bower_components/**/*.*'
     },
     clean: './build'
 };
@@ -84,6 +87,13 @@ gulp.task('image:build', function () {
         .pipe(gulp.dest(path.build.img)) //И бросим в build
         .pipe(reload({stream: true}));
 });
+
+//libs build
+gulp.task('libs:build', function() {
+    gulp.src(path.src.libs)
+        .pipe(gulp.dest(path.build.libs))
+});
+
 
 //fonts build
 gulp.task('fonts:build', function() {
