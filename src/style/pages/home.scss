@@ -1,0 +1,45 @@
+.image-top .image {
+  overflow: hidden;
+}
+
+.about.section {
+  .image-left{
+    overflow: hidden;
+  }
+  .description {
+    font-size: 14px;
+
+    p {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.our-advantages.section {
+  .image {
+    overflow:hidden;
+
+    img {
+      max-width: 252px;
+      min-height: 168px;
+    }
+  }
+  .description {
+    font-size: 14px;
+
+    p {
+      margin-bottom: 10px;
+    }
+  }
+}
+.partnership.section {
+  .bg-image{
+    background: url(../img/part_bg.jpg);
+    background-position: center;
+  }
+  .description {
+    padding: 132px 73px;
+    font-size: 21px;
+    font-weight: bold;
+  }
+}

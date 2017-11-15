@@ -1,38 +1,25 @@
-body {
 
-}
+//=========================//
+//
+//        IMPORT
+//
+//=========================//
 
-.image-top .image {
-  overflow: hidden;
-}
+// CORE IMPORT
+//==========================
+@import 'base/base';
 
-.about.section {
-  .image-left{
-    overflow: hidden;
-  }
-  .description {
-    font-size: 14px;
+// LAYOUT IMPORT
+//==========================
 
-    p {
-      margin-bottom: 10px;
-    }
-  }
-}
+// MODULES IMPORT
+//==========================
+@import 'modules/our-brands';
 
-.our-advantages.section {
-  .image {
-    overflow:hidden;
+// PAGES IMPORT
+//==========================
+@import 'pages/home';
 
-    img {
-      max-width: 252px;
-      min-height: 168px;
-    }
-  }
-  .description {
-    font-size: 14px;
+// MEDIA IMPORT
+//==========================
 
-    p {
-      margin-bottom: 10px;
-    }
-  }
-}

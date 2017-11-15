@@ -1,0 +1,74 @@
+//.brands-main{ margin-bottom: 40px;}
+//.brands-sl-wp{ padding-bottom: 35px; border-bottom: 1px solid #ffce0e;}
+.brands-sl .brands-sl-item{ text-align:center; cursor: pointer;}
+.brands-sl .brands-sl-item-wp{ display:table; width:100%;}
+.brands-sl .brands-sl-item img{ max-width:100%; display:inline;}
+.brands-sl .brands-sl-item span{ display:table-cell; vertical-align:middle; height:70px;}
+.brands-sl .brands-sl-item .color{ display:none;}
+.brands-sl .brands-sl-item.slick-current .color{ display:table-cell;}
+.brands-sl .brands-sl-item.slick-current .dark{ display:none;}
+.brands-sl .brands-sl-item.slick-active{}
+.brands-sl .slick-list:before{ position:absolute; content:'';
+  background: rgba(255,255,255,1);
+  background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(231,56,39,0) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(231,56,39,0)));
+  background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(231,56,39,0) 100%);
+  background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(231,56,39,0) 100%);
+  background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(231,56,39,0) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(231,56,39,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e73827', GradientType=1 );
+  width:104px; height:100%; left:0; top:0; z-index:1;}
+.brands-sl .slick-list:after{ position:absolute; content:'';
+  background: rgba(255,255,255,0);
+  background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+  width:104px; height:100%; right:0; top:0; z-index:1;}
+.brands-sl .slick-arrow{
+  color: transparent;
+  position: absolute;
+  width: 19px;
+  height: 57px;
+  //top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 5;
+  background: url(../img/sprite.png);
+}
+.brands-sl .slick-prev{ background-position: -198px -1px; left: 0;}
+.brands-sl .slick-next{ background-position: -170px -1px; right: 0;}
+.brands-items .brands-item{ position: relative;}
+.brands-items .brands-item-center{ width: 100%; display: table; font-size: 16px;}
+.brands-items .brands-item-center .col{
+  float: none;
+  vertical-align: middle;
+  z-index: -1;
+}
+.brands-items .brands-item-bottom{ text-align: center; font-weight: bold; padding: 3px 200px; color: #fff; line-height: 1.2; text-transform: uppercase; font-size: 13px;}
+
+.brands-items .brands-item.optima .brands-item-top{ position:absolute; left: 0; top: 0; width: 100%;}
+.brands-items .brands-item.optima .brands-item-center{ padding-top: 78px;}
+.brands-items .brands-item.optima .brands-item-bottom{ background: #d6031b;}
+.brands-items .brands-item.kores .brands-item-bottom{ background: #e2001a;}
+.brands-items .brands-item.schender .brands-item-bottom{ background: #002945; color: #00b2e7;}
+.brands-items .brands-item.format .brands-item-bottom{ background: #fecc03; color: #1a171b;}
+.brands-items .brands-item.cabinet .brands-item-bottom{ background: #7b152c;}
+.brands-items .brands-item.coolForSchool .brands-item-bottom{ background: #ae2f88;}
+.brands-items .brands-item.graff .brands-item-bottom{ background: #848587;}
+.brands-items .brands-item.economic .brands-item-bottom{ background: #003883;}
+
+.slick-prev:before, .slick-next:before {
+  content: "";
+}
+
+.brands-item-top {
+  overflow: hidden;
+}
+
+.brands-items > .brands-item:not(:first-child) {
+  display: none;
+}
