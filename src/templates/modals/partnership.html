@@ -1,0 +1,67 @@
+<!-- Modal -->
+<div class="modal fade" id="partnership" tabindex="-1" role="dialog" aria-labelledby="partnershipModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="partnershipModalLabel">Заявка на партнерство</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="col-sm-6 float-left">
+                        <div class="form-group">
+                            <label for="namePartnershipInput">Ім'я та Призвісько</label>
+                            <input type="text" class="form-control" id="namePartnershipInput" placeholder="Ім'я та Призвісько">
+                        </div>
+                        <div class="form-group">
+                            <label for="emailPartnershipInput">E-mail</label>
+                            <input type="email" class="form-control" id="emailPartnershipInput" placeholder="E-mail">
+                        </div>
+                        <div class="form-group">
+                            <label for="phonePartnershipInput">Телефон</label>
+                            <input type="text" class="form-control" id="phonePartnershipInput" placeholder="Телефон">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 float-left">
+                        <div class="form-group">
+                            <label for="countryPartnershipInput">Країна</label>
+                            <select class="form-control" id="countryPartnershipInput">
+                                <option>Україна</option>
+                                <option>Білорусія</option>
+                                <option>Росія</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="statePartnershipInput">Регіон</label>
+                            <select class="form-control" id="statePartnershipInput">
+                                <option>Київ</option>
+                                <option>Харків</option>
+                                <option>Одеса</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="cityPartnershipInput">Місто</label>
+                            <input type="text" class="form-control" id="cityPartnershipInput" placeholder="Місто">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="textPartnershipInput">Текст повідомлення</label>
+                        <textarea class="form-control" id="textPartnershipInput" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="capchaPartnershipInput">Введіть число на картинці</label>
+                        <input type="text" class="form-control" id="capchaPartnershipInput" placeholder="Введіть число на картинці">
+                        <img src="img/util.gif">
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" role="button" data-dismiss="modal">Закрити</button>
+                <button type="button" class="btn btn-primary" role="button">Відправити</button>
+            </div>
+        </div>
+    </div>
+</div>

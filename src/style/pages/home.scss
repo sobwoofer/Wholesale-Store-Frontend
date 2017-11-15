@@ -43,3 +43,20 @@
     font-weight: bold;
   }
 }
+
+.news.section {
+ .item {
+   .image {
+     overflow: hidden;
+   }
+   .date {
+     font-size: 14px;
+   }
+ }
+}
+
+.contact.section {
+  .description {
+    padding: 57px 25px;
+  }
+}

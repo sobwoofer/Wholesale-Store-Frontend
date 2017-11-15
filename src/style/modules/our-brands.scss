@@ -46,6 +46,7 @@
 .brands-items .brands-item-center .col{
   float: none;
   vertical-align: middle;
+  display: table-cell;
   z-index: -1;
 }
 .brands-items .brands-item-bottom{ text-align: center; font-weight: bold; padding: 3px 200px; color: #fff; line-height: 1.2; text-transform: uppercase; font-size: 13px;}
