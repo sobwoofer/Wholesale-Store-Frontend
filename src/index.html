@@ -79,7 +79,7 @@
             <div class="title w-100 text-center mb-2"><h2>Наші переваги</h2></div>
                 <div class="row">
                     <div class="item col-sm-3">
-                        <div class="image mb-1"><a href="#"><img src="img/10.jpg"></a></div>
+                        <div class="image mb-1"><a href="#" data-toggle="modal" data-target="#ourAdvantagesModal"><img src="img/10.jpg"></a></div>
                         <div class="title text-center text-primary"><h5>Виробництво</h5></div>
                         <div class="description">
                             <p>Офісно-виробничий комплекс №1:
@@ -92,7 +92,7 @@
                         </div>
                     </div>
                     <div class="item col-sm-3">
-                        <div class="image mb-1"><a href="#"><img src="img/16.jpg"></a></div>
+                        <div class="image mb-1"><a href="#" data-toggle="modal" data-target="#ourAdvantagesModal"><img src="img/16.jpg"></a></div>
                         <div class="title text-center text-primary"><h5>Імпорт та експорт</h5></div>
                         <div class="description">
                             <p>Імпорт з Китаю з 1999 року.
@@ -102,7 +102,7 @@
                         </div>
                     </div>
                     <div class="item col-sm-3">
-                        <div class="image mb-1"><a href="#"><img src="img/22.jpg"></a></div>
+                        <div class="image mb-1"><a href="#" data-toggle="modal" data-target="#ourAdvantagesModal"><img src="img/22.jpg"></a></div>
                         <div class="title text-center text-primary"><h5>Логістично-складський комплекс</h5></div>
                         <div class="description">
                             <p>Площа - 8100 кв.м.
@@ -110,7 +110,7 @@
                         </div>
                     </div>
                     <div class="item col-sm-3">
-                        <div class="image mb-1"><a href="#"><img src="img/24.jpg"></a></div>
+                        <div class="image mb-1"><a href="#" data-toggle="modal" data-target="#ourAdvantagesModal"><img src="img/24.jpg"></a></div>
                         <div class="title text-center text-primary"><h5>Автопарк</h5></div>
                         <div class="description">
                             <p>Власний автопарк - 40 автомобілів.
@@ -122,6 +122,8 @@
                 </div>
             </div>
         </div>
+        //= templates/modals/advantage.html
+
     </section>
     <section class="our-brands section mb-4">
         <div class="container">
@@ -288,8 +290,9 @@
                                 що займається подальшим перепродажем канцелярських товарів.
                             </p>
                             <button class="btn btn-outline-primary" data-toggle="modal" data-target="#partnership" role="button">Заявка на партнерство</button>
-                            //= templates/modals/partnership.html
+
                         </div>
+                        //= templates/modals/partnership.html
                     </div>
                     <div class="col-sm-6 float-left"></div>
                 </div>
