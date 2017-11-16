@@ -1,6 +1,30 @@
 <head>
     <!-- Latest compiled and minified CSS -->
     <meta charset="utf-8">
+    <meta id="myViewport" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script type="text/javascript">
+
+        window.addEventListener('load', function() {
+            resizeLet();
+        });
+//        window.addEventListener('resize', function() {
+//            if (window.resizeLate) {
+//                resizeLet();
+//            }
+//        });
+        function resizeLet() {
+            var mvp = document.getElementById('myViewport');
+            if (window.innerWidth < 380) {
+                mvp.setAttribute('content', 'width=380');
+                window.resizeLate = false;
+            } else {
+                mvp.setAttribute('content', 'width=device-width, initial-scale=1, shrink-to-fit=no');
+                window.resizeLate = true;
+            }
+        }
+
+    </script>
 
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
 

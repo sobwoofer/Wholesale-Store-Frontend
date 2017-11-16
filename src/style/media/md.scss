@@ -1,0 +1,54 @@
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+  header {
+    nav {
+      width: 100%;
+    }
+    .lang {
+      position: absolute;
+      left: 98px;
+      top: 26px;
+    }
+  }
+
+  .image-top.section {
+    .image {
+      .title {
+        div {
+          line-height: 69px;
+        }
+      }
+    }
+  }
+
+  .partnership.section {
+    .description {
+      padding: 61px 32px;
+      font-size: 21px;
+      font-weight: 700;
+    }
+  }
+  .brands-items {
+    .brands-item-center {
+      display: block;
+    }
+    .col {
+      display: block;
+    }
+  }
+  .our-advantages.section {
+    .item:nth-child(3n) {
+      clear: left;
+    }
+
+    .item {
+      .title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+
+
+}

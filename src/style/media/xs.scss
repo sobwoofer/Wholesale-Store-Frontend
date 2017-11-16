@@ -1,0 +1,77 @@
+@media screen and (max-width: 556px) {
+  header {
+    nav {
+      width: 100%;
+    }
+    .lang {
+      position: absolute;
+      left: 98px;
+      top: 26px;
+    }
+  }
+
+  .image-top.section {
+    .image {
+      .title {
+        div {
+          font-size: 29px;
+          line-height: 34px;
+        }
+      }
+    }
+  }
+
+  .partnership.section {
+    .description {
+      padding: 61px 32px;
+      font-size: 21px;
+      font-weight: 700;
+    }
+  }
+
+  .brands-items {
+    .brands-item-center {
+      display: block;
+      padding-bottom: 15px;
+
+      img {
+        max-width:100%;
+      }
+    }
+    .brands-item-bottom {
+      padding: 5px;
+    }
+    .col {
+      display: block;
+    }
+  }
+
+  .partnership.section {
+    .bg-image {
+      background-position: inherit;
+    }
+  }
+
+  .about.section {
+    .image-left {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .our-advantages.section {
+    .item:nth-child(3n) {
+      clear: left;
+    }
+    .item {
+
+      .title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+
+}

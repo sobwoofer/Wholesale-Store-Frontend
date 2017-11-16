@@ -1,5 +1,15 @@
-.image-top .image {
-  overflow: hidden;
+.image-top.section {
+  .image {
+    overflow: hidden;
+    .title {
+      position: absolute;
+      div {
+        color: #FFF;
+        font-size: 52px;
+        font-weight: 700;
+      }
+    }
+  }
 }
 
 .about.section {
