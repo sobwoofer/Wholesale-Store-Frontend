@@ -18,4 +18,4 @@ bower i
 ```
 gulp
 ```
-- you get production project from sources in directory /build<br>
+- you get production project from sources in directory /build

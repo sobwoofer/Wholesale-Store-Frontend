@@ -8,7 +8,7 @@ var path = {
         libs: 'build/libs/'
     },
     src: { //Paths from getting sources
-        html: 'src/*.html',
+        html: 'src/web-*/*.html',
         js: 'src/js/main.js',
         style: 'src/style/main.scss',
         img: 'src/img/**/*.*',
@@ -107,7 +107,8 @@ gulp.task('build', [
     'js:build',
     'style:build',
     'fonts:build',
-    'image:build'
+    'image:build',
+    'libs:build'
 ]);
 
 //clean build directory
