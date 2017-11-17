@@ -1,0 +1,29 @@
+.product-list-table {
+  font-size: 13px;
+  line-height: 13px;
+
+  thead {
+    th {
+      vertical-align: inherit;
+    }
+  }
+
+
+  th {
+    vertical-align: inherit;
+  }
+
+  td {
+    vertical-align: inherit;
+
+    img.image {
+      max-width: 50px;
+    }
+    input.qty {
+      width: 40px;
+      font-size: 13px;
+    }
+
+  }
+
+}

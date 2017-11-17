@@ -17,6 +17,7 @@
     "bootstrap": "4.0.0-alpha.6",
     "font-awesome": "4.*",
     "tether": "^1.4.1",
-    "slick-carousel": "^1.8.0"
+    "slick-carousel": "^1.8.0",
+    "timecircles": "^1.5.3"
   }
 }

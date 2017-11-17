@@ -2,3 +2,16 @@ body {
   font-family: 'Play', sans-serif;
 }
 
+.tooltip-inner {
+  background-color: #fff;
+  max-width: inherit;
+  border: 1px solid #cecece;
+}
+
+.tooltip.bs-tether-element-attached-bottom .tooltip-inner::before, .tooltip.tooltip-top .tooltip-inner::before{
+  border-top-color: #ababab;
+}
+
+.tooltip.bs-tether-element-attached-left .tooltip-inner::before, .tooltip.tooltip-right .tooltip-inner::before {
+  border-right-color: #ababab;
+}

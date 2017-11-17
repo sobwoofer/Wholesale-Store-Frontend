@@ -3,10 +3,34 @@
 //= ../templates/cabinet/head.html
 
 
-<body>
+<body class="cabinet-body">
 
 //= ../templates/cabinet/header.html
 
+<main class="">
+    <div class="container">
+        //= ../templates/cabinet/modules/breadcrumbs.html
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                //= ../templates/cabinet/modules/side-category.html
+            </div>
+            <div class="col-sm-9">
+                <!--//= ../templates/cabinet/modules/flash-banner.html-->
+                <div class="alert alert-success" role="alert">
+                    <span class="badge badge-warning">c 21.12.2017</span><strong class="float-right">ДО НАЧАЛА АКЦИИ ОСТАЛОСЬ:</strong>
+                    <div id="DateCountdown" data-date="2017-12-12 00:00:00" style="width: 100%;"></div>
+                </div>
+
+
+
+                //= ../templates/cabinet/modules/product-list.html
+            </div>
+        </div>
+    </div>
+
+</main>
 </body>
 </html>
 
