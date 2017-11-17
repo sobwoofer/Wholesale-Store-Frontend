@@ -1,0 +1,185 @@
+.catalog {
+  margin-top: 12px;
+  background: #FFF;
+  border-radius: 10px;
+
+  // display: none;
+  &.active {
+    > .menu {
+      display: block;
+    }
+    .catalog-btn {
+      &:after {
+        display: block;
+      }
+
+    }
+  }
+  .catalog-btn {
+    outline: none;
+    width: 100%;
+    background: none;
+    border: 1px solid #ccc;
+    text-transform: uppercase;
+    font-weight: 300;
+    border-radius: 7px;
+    padding: 4px 0px;
+    position: relative;
+    &:after {
+      content: ' ';
+      width: 25px;
+      height: 25px;
+      border-bottom: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      -moz-transform: rotate(45deg); /* Для Firefox */
+      -ms-transform: rotate(45deg); /* Для IE */
+      -webkit-transform: rotate(45deg); /* Для Safari, Chrome, iOS */
+      -o-transform: rotate(45deg); /* Для Opera */
+      transform: rotate(45deg);
+      background: #fff;
+      display: none;
+      position: absolute;
+      background: #fff;
+      left: 50%;
+      margin-left: -13px;
+      bottom: -13px;
+    }
+    i {
+      font-style: normal;
+      z-index: 111;
+      position: relative;
+    }
+    span {
+      height: 2px;
+      width: 15px;
+      background: #cccccc;
+      display: block;
+      position: absolute;
+      right: 11px;
+      top: 50%;
+      margin-top: -2px;
+      &:after {
+        content: '';
+        height: 2px;
+        width: 15px;
+        background: #cccccc;
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: -5px;
+      }
+      &:before {
+        content: '';
+        height: 2px;
+        width: 15px;
+        background: #cccccc;
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: 5px;
+      }
+    }
+  }
+  > .menu {
+    display: none;
+    width: calc(100% - 30px);
+    margin-top: 22px;
+    padding: 0px;
+    background: #fff;
+    padding: 5px 0px;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 99;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    .menu__item {
+      width: 100%;
+      list-style: none;
+      padding: 3px 5px;
+      border-radius: 8px;
+      &:hover {
+        background: #f0f0f0;
+        border-radius: 0px;
+      }
+      &:hover ul {
+        display: block;
+      }
+
+      a, .menu__link {
+        font-size: 14px;
+        font-weight: 300;
+        width: 100%;
+        display: inline-block;
+        position: relative;
+
+        &:hover:after {
+          border: 5px solid transparent;
+          border-left: 5px solid #003399;
+        }
+
+      }
+      .menu__link {
+        &:after {
+          content: ' ';
+          position: absolute;
+          top: 50%;
+          right: 0px;
+          margin-top: -5px;
+          border: 5px solid transparent;
+          border-left: 5px solid #d1d1d1;
+        }
+        &_flat {
+          width: 200px;
+          color: #000;
+          padding: 3px 0 3px 15px;
+          &:hover {
+            background-color: #f0f0f0;
+            border-radius: 8px;
+          }
+          &:after {
+            display: none;
+          }
+        }
+      }
+      .sub_menu {
+        display: none;
+        position: absolute;
+        width: 800px;
+        top: 0;
+        right: -800px;
+        padding-top: 10px;
+        min-height: 100%;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, .75);
+        background-color: #fff;
+        margin-left: 20px;
+        border-radius: 8px;
+        &__title {
+          background-color: transparent;
+          &:hover {
+            background-color: transparent;
+          }
+        }
+        &__link {
+          display: inline-block;
+          width: auto;
+          padding-right: 20px;
+          &:hover {
+            background-color: transparent;
+          }
+          &:after {
+            content: ' ';
+            position: absolute;
+            top: 50%;
+            right: 0px;
+            margin-top: 0;
+            border: 5px solid transparent;
+            border-top: 5px solid #003399;
+          }
+        }
+      }
+    }
+  }
+  &.active {
+  }
+}

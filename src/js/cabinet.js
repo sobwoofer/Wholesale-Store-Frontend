@@ -68,9 +68,17 @@ $(function () {
 //Tooltip plugin
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
-})
+});
 
 //Start Flash Timer
 $(function () {
     $("#DateCountdown").TimeCircles();
-})
+});
+
+
+//menu button
+$(function () {
+    $('.catalog-btn').click(function (e) {
+        $('.second-menu .catalog').toggleClass('active')
+    });
+});
