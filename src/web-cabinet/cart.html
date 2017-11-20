@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+//= ../templates/cabinet/head.html
+
+
+<body class="cabinet-body">
+
+//= ../templates/cabinet/header.html
+
+<main class="">
+    <div class="container">
+        //= ../templates/cabinet/modules/breadcrumbs.html
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-12">
+                //= ../templates/cabinet/sidebars/cart-sidebar.html
+            </div>
+            <div class="col-lg-9 col-md-12">
+                <div class="hidden-xs-down">
+                    //= ../templates/cabinet/products/cart/products-list.html
+                </div>
+                <div class="hidden-sm-up">
+                    //= ../templates/cabinet/products/cart/products-mobile.html
+                </div>
+
+                <div class="cart-nav">
+                    <div class="total text-right">
+                        <p class="h4">Итого: 504675.64 грн.</p>
+                    </div>
+                    <div class=" float-right">
+                        <button class="btn btn-primary">Ваша цена</button>
+                        <button class="btn btn-success">Заказать</button>
+                        <button class="btn btn-danger">Удалить все</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</main>
+</body>
+</html>
+

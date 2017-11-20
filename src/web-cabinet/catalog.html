@@ -14,11 +14,16 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-12">
-                //= ../templates/cabinet/modules/filter.html
+                //= ../templates/cabinet/sidebars/filter.html
             </div>
             <div class="col-lg-9 col-md-12">
-
-                //= ../templates/cabinet/modules/product-list.html
+                <div class="hidden-xs-down">
+                    //= ../templates/cabinet/products/products-list.html
+                </div>
+                <div class="hidden-sm-up">
+                    //= ../templates/cabinet/products/products-mobile.html
+                </div>
+                //= ../templates/cabinet/modules/pagination.html
             </div>
         </div>
     </div>
