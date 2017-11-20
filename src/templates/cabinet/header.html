@@ -1,6 +1,6 @@
 <header class="w-100">
 
-    <div class="container">
+    <div class="container hidden-md-down">
         <div class="row">
             <nav class="navbar navbar-toggleable-md w-100 mr-lg-auto navbar-light">
                 <button class="navbar-toggler navbar-toggler-right mt-3" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,44 +31,68 @@
         </div>
     </div>
     <div class="second-menu bg-faded">
+
         <div class="container">
+            //= modules/mobile-catalog.html
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-sm-3 hidden-md-down">
                     //= modules/top-catalog.html
                 </div>
-                <div class=" col-sm-9">
-                    <nav class="navbar navbar-toggleable-md mr-lg-auto navbar-light">
-                    <button class="navbar-toggler navbar-toggler-right mt-3" type="button" data-toggle="collapse" data-target="#secondNavbarNav" aria-controls="secondNavbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="menu">
-                    </div>
-                    <div class="collapse navbar-collapse" id="secondNavbarNav">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" target="_blank" href="#">Быстрое добавление товаров</a>
-                            </li>
-                        </ul>
-                        <ul class="navbar-nav float-right">
+                <div class="col-lg-9 col-sm-12">
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Флеш-акция</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Новинки</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" target="_blank" href="#">Избранное</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" target="_blank" href="#">Ожидаемые</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" target="_blank" href="#">Корзина</a>
-                            </li>
-                        </ul>
-                    </div>
+                    <nav class="navbar navbar-toggleable-md pr-lg-0 pl-lg-0 mr-lg-auto navbar-light">
+
+                        <!--<a class="hidden-lg-up navbar-brand" href="#">-->
+                            <!--<img src="../img/logo.png">-->
+                        <!--</a>-->
+                        <button class="mobile-menu-button navbar-toggler navbar-toggler-right mt-3" type="button" data-toggle="collapse" data-target="#secondNavbarNav" aria-controls="secondNavbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!--<div class="menu">-->
+                        <!--</div>-->
+                        <div class="collapse navbar-collapse" id="secondNavbarNav">
+                            <ul class="navbar-nav mr-auto hidden-md-down">
+                                <li class="nav-item">
+                                    <a class="nav-link" target="_blank" href="#">Быстрое добавление товаров</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav float-lg-right">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Флеш-акция</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Новинки</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" target="_blank" href="#">Избранное</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" target="_blank" href="#">Ожидаемые</a>
+                                </li>
+                                <li class="hidden-lg-up">
+                                    <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Личный кабинет
+                                    </span>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Статусы заказов</a>
+                                        <a class="dropdown-item" href="#">Финансы</a>
+                                        <a class="dropdown-item" href="#">Выход</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" target="_blank" href="#">Корзина</a>
+                                </li>
+                            </ul>
+                        </div>
                     </nav>
+                    <div class="mobile-search hidden-lg-up">
+                        <form class="form-inline my-2 my-lg-0 mr-auto">
+                            <input class="form-control col-9 col-sm-9 col-md-10 mr-auto" type="text" placeholder="Поиск">
+                            <button class="btn btn-outline-primary col-2 my-2 col-sm-2 col-md-1 my-sm-0 float-right" role="button" type="submit">
+                                <i class="fa fa-search" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+
                 </div>
             </div>
         </div>

@@ -15,3 +15,14 @@ body {
 .tooltip.bs-tether-element-attached-left .tooltip-inner::before, .tooltip.tooltip-right .tooltip-inner::before {
   border-right-color: #ababab;
 }
+
+.second-menu {
+  .navbar-collapse {
+    font-size: 15px;
+  }
+  .mobile-menu-button {
+    position: absolute;
+    top: -73px;
+    right: 89px;
+  }
+}

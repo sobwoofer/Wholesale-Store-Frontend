@@ -82,3 +82,5 @@ $(function () {
         $('.second-menu .catalog').toggleClass('active')
     });
 });
+
+//= source/mobile-catalog.js

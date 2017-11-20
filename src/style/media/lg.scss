@@ -15,6 +15,18 @@
     }
   }
 
+  .catalog {
+    .menu__item {
+      .sub_menu {
+        width: 728px!important;
+        right: -728px!important;
+        .menu_flat {
+          padding-left: 10px;
+        }
+      }
+    }
+
+  }
 
 
 
