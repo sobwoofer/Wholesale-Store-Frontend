@@ -1,0 +1,15 @@
+{
+  "name": "jquery.ui.slider.dragrange",
+  "version": "0.0.1",
+  "main": "jquery.ui.slider.dragRange.js",
+  "homepage": "https://github.com/rassokhin-s/jquery.ui.slider.dragRange",
+  "authors": [
+    "Stanislav Rassokhin <sr.rassokhin@gmail.com>"
+  ],
+  "description": "jQuery UI Slider widget extension for a rangeDrag feature.",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": ">=1.10.2",
+    "jquery.ui": ">=1.12.0"
+  }
+}
