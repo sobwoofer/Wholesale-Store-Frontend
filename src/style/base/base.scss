@@ -36,4 +36,13 @@ body {
   }
 }
 
+.table-swipe-helper {
+  .image {
+    float: left;
+    position: relative;
 
+    img {
+      width: 50px;
+    }
+  }
+}
