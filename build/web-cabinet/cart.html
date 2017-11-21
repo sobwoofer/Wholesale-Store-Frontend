@@ -149,7 +149,7 @@
                                 <div class="submenu menu" data-menu="1">
                                     <div class="submenu-back">
                                         <div class="menu-item">
-                                            <a href="#" class="menu-back"><i class="fa fa-angle-left" aria-hidden="true"></i>Назад</a></div>
+                                            <a href="#" class="menu-back bg-faded"><i class="fa fa-angle-left" aria-hidden="true"></i>Назад</a></div>
                                     </div>
                                     <ul class="list-unstyled">
                                         <li>
@@ -170,7 +170,7 @@
                                 <div class="submenu menu" data-menu="2">
                                     <div class="submenu-back">
                                         <div class="menu-item">
-                                            <a href="#" class="menu-back"><i class="fa fa-angle-left" aria-hidden="true"></i>Назад</a></div>
+                                            <a href="#" class="menu-back bg-faded"><i class="fa fa-angle-left" aria-hidden="true"></i>Назад</a></div>
                                     </div>
                                     <ul class="list-unstyled">
                                         <li>
@@ -188,7 +188,7 @@
                                     <div class="submenu-back">
                                         <div class="menu-item">
             
-                                            <a href="#" class="menu-back"><i class="fa fa-angle-left" aria-hidden="true"></i>Назад</a></div>
+                                            <a href="#" class="menu-back bg-faded"><i class="fa fa-angle-left" aria-hidden="true"></i>Назад</a></div>
                                     </div>
                                     <ul class="list-unstyled">
                                         <li>
@@ -206,7 +206,7 @@
                                     <div class="submenu-back">
                                         <div class="menu-item">
             
-                                            <a href="#" class="menu-back"><i class="fa fa-angle-left" aria-hidden="true"></i>Назад</a></div>
+                                            <a href="#" class="menu-back bg-faded"><i class="fa fa-angle-left" aria-hidden="true"></i>Назад</a></div>
                                     </div>
                                     <ul class="list-unstyled">
                                         <li>
@@ -223,7 +223,7 @@
                                 <div class="submenu menu" data-menu="5">
                                     <div class="submenu-back">
                                         <div class="menu-item">
-                                            <a href="#" class="menu-back"><i class="fa fa-angle-left" aria-hidden="true"></i>Назад</a></div>
+                                            <a href="#" class="menu-back bg-faded"><i class="fa fa-angle-left" aria-hidden="true"></i>Назад</a></div>
                                     </div>
                                     <ul class="list-unstyled">
                                         <li>
@@ -240,7 +240,7 @@
                                 <div class="submenu menu" data-menu="6">
                                     <div class="submenu-back">
                                         <div class="menu-item">
-                                            <a href="#" class="menu-back"><i class="fa fa-angle-left" aria-hidden="true"></i>Назад</a></div>
+                                            <a href="#" class="menu-back bg-faded"><i class="fa fa-angle-left" aria-hidden="true"></i>Назад</a></div>
                                     </div>
                                     <ul class="list-unstyled">
                                         <li>
@@ -576,17 +576,21 @@
         <div class="row">
             <div class="col-lg-3 col-md-12">
                 <div class="cart-sidebar">
-                    <ul class="nav nav-tabs" role="tablist">
+                    <div class="wrpper_cartSideToggler mb-2 col-12 float-left  hidden-lg-up">
+                        <h2 class="catalog-title hidden-xs-down"><b>Личные данные</b></h2>
+                        <button id="showSide" class="float-right hidden-lg-up btn btn_blue btn_show_side">Показать личные данные</button>
+                    </div>
+                    <ul class="nav nav-tabs hidden-md-down" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" data-toggle="tab" href="#personalData">Личные данные</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item ">
                             <a class="nav-link" data-toggle="tab" href="#fastAdd">Быстрое добавление</a>
                         </li>
                     </ul>
                 
                     <!-- Tab panes -->
-                    <div class="tab-content">
+                    <div class="tab-content side-content">
                         <div class="tab-pane active" id="personalData" role="tabpanel">
                             <form role="form">
                                 <div class="form-group">

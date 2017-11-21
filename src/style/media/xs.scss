@@ -73,8 +73,14 @@
       }
     }
   }
-  .catalog-filter {
+  .side-content {
     display: none;
+  }
+
+  .wrpper_cartSideToggler {
+    .btn_show_side {
+      position: inherit;
+    }
   }
 
 

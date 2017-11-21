@@ -134,14 +134,7 @@ a.filter-title{
     }
   }
 }
-.wrpper_filterToggler{
-  //margin-top: 30px;
-  .btn_show_filter{
-    position: absolute;
-    right: 15px;
-    top: 0px;
-  }
-}
+
 .btn_blue{
   background-color: #039;
   color: #fff!important;
@@ -159,10 +152,11 @@ a.filter-title{
   float: left;
   margin-top: -2px;
 }
+
 .filter_cat_wrp{
   &.active{
     .filter_cat_block{
-      //display: none;
+      display: none;
     }
     .toggle-btn{
       &:before{
@@ -189,4 +183,5 @@ a.filter-title{
     }
   }
 }
+
 

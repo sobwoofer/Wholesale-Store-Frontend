@@ -80,8 +80,9 @@ $(function () {
     $('.filter_cat_wrp .toggle-btn').click(function (e) {
         $($(this).parent().parent('.filter_cat_wrp')).toggleClass('active')
     });
-    $('#showFilter').click(function (e) {
-        $('.catalog-filter').slideToggle()
+
+    $('#showSide').click(function (e) {
+        $('.side-content').slideToggle()
     });
     $("#slider-range").slider({
         min: 0,
