@@ -11,7 +11,7 @@ var path = {
         html: 'src/web-*/*.html',
         js: 'src/js/*.js',
         style: 'src/style/main.scss',
-        img: 'src/img/**/*.*',
+        img: 'src/img/**/*.**',
         fonts: 'src/fonts/**/*.*',
         libs: 'bower_components/**/*.*'
     },
@@ -84,7 +84,7 @@ gulp.task('image:build', function () {
         //     use: [pngquant()],
         //     interlaced: true
         // }))
-        .pipe(gulp.dest(path.build.img)) //И бросим в build
+        .pipe(gulp.dest(path.build.img))
         .pipe(reload({stream: true}));
 });
 

@@ -16,21 +16,21 @@
 //==========================
 @import 'modules/our-brands';
 @import 'modules/left-category';
-@import 'modules/product-list';
 @import 'modules/flash-banner';
 @import 'modules/top-catalog';
 @import 'modules/mobile-catalog.scss';
 @import 'modules/filter.scss';
 
 
-// PAGES IMPORT
+// PAGES CONTENT IMPORT
 //==========================
-@import 'pages/home';
+@import 'pages-content/personal';
+@import 'pages-content/cart';
+@import 'pages-content/home';
+@import 'pages-content/product-list';
 
 // MEDIA IMPORT
 //==========================
-
-
 @import 'media/xl';
 @import 'media/lg';
 @import 'media/md';
