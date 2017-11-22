@@ -11,7 +11,7 @@ var path = {
         html: 'src/web-*/*.html',
         js: 'src/js/*.js',
         style: 'src/style/main.scss',
-        img: 'src/img/**/*.**',
+        img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*',
         libs: 'bower_components/**/*.*'
     },
@@ -78,12 +78,12 @@ gulp.task('style:build', function () {
 //image build
 gulp.task('image:build', function () {
     gulp.src(path.src.img)
-        // .pipe(imagemin({
-        //     progressive: true,
-        //     svgoPlugins: [{removeViewBox: false}],
-        //     use: [pngquant()],
-        //     interlaced: true
-        // }))
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()],
+            interlaced: true
+        }))
         .pipe(gulp.dest(path.build.img))
         .pipe(reload({stream: true}));
 });
