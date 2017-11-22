@@ -7,7 +7,6 @@ This documentation will provide some examples of how to use TimeCircles. Usage o
 
 ## General use
 
-
 The first thing to do is to include the javascript files for jQuery and TimeCircles, as well as the TimeCircles stylesheet. These should ideally be included in the head of your html file.
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

@@ -13,7 +13,6 @@
  * Each function called upon the public class will be forwarded to each instance
  * of the private classes within the relevant element collection
  **/
-
 (function($) {
 
     var useWindow = window;
