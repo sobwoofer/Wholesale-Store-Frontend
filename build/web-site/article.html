@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <meta charset="utf-8">
+    <meta id="myViewport" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script type="text/javascript">
+
+        window.addEventListener('load', function() {
+            resizeLet();
+        });
+//        window.addEventListener('resize', function() {
+//            if (window.resizeLate) {
+//                resizeLet();
+//            }
+//        });
+        function resizeLet() {
+            var mvp = document.getElementById('myViewport');
+            if (window.innerWidth < 380) {
+                mvp.setAttribute('content', 'width=380');
+                window.resizeLate = false;
+            } else {
+                mvp.setAttribute('content', 'width=device-width, initial-scale=1, shrink-to-fit=no');
+                window.resizeLate = true;
+            }
+        }
+
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+
+    <script src="../libs/jquery/dist/jquery.min.js"></script>
+    <!--<script src="libs/jquery/dist/jquery.slim.min.js"></script>-->
+    <script src="../libs/tether/dist/js/tether.min.js"></script>
+    <script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../libs/slick-carousel/slick/slick.min.js"></script>
+
+    <link rel="stylesheet" href="../libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../libs/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="../libs/slick-carousel/slick/slick-theme.css">
+    <link rel="stylesheet" href="../libs/tether/dist/css/tether.min.css">
+    <link rel="stylesheet" href="../libs/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../css/main.css">
+    <script type="text/javascript" src="../js/main.js"></script>
+
+</head>
+<body class="site-body">
+
+<!--TODO please remember that you should remove test page navigator from production project-->
+<div class="dropdown test-page-nav">
+    <button class="btn btn-info dropdown-toggle" role="button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fa fa-th-list" aria-hidden="true"></i> Навигация
+        <div class="image"> <img src="../img/icons/salut.gif"></div>
+
+    </button>
+
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="/web-site/index.html">Главная</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="/web-cabinet/flash-sale.html">Флеш Акция</a>
+        <a class="dropdown-item" href="/web-cabinet/news.html">Новинки</a>
+        <a class="dropdown-item" href="/web-cabinet/catalog.html">Каталог Таблица</a>
+        <a class="dropdown-item" href="/web-cabinet/catalog-grid.html">Каталог плитка</a>
+        <a class="dropdown-item" href="/web-cabinet/cart.html">Корзина</a>
+        <a class="dropdown-item" href="/web-cabinet/personal.html">Личная информация</a>
+        <a class="dropdown-item" href="/web-cabinet/statuses-of-orders.html">Статусы заказов</a>
+        <a class="dropdown-item" href="/web-cabinet/finances.html">Финансы</a>
+        <a class="dropdown-item" href="/web-cabinet/faq.html">Вопросы и ответы</a>
+    </div>
+</div>
+
+<style>
+    .dropdown.test-page-nav {
+        position: fixed;
+        top: 100px;
+        left: -152px;
+        -webkit-transition: left ease-out 0.3s;
+        -moz-transition: left ease-out 0.3s;
+        -ms-transition: left ease-out 0.3s;
+        -o-transition: left ease-out 0.3s;
+        transition: left ease-out 0.3s;
+        z-index: 99999999;
+    }
+    .dropdown.test-page-nav:hover {
+        left: 0px;
+    }
+    .test-page-nav .image {
+        position: absolute;
+        right: -50px;
+        top: -5px;
+        opacity: 0.75;
+    }
+    .dropdown.test-page-nav:hover .image img {
+        opacity: 0;
+        -webkit-transition: opacity ease-out 0.3s;
+        -moz-transition: opacity ease-out 0.3s;
+        -ms-transition: opacity ease-out 0.3s;
+        -o-transition: opacity ease-out 0.3s;
+        transition: opacity ease-out 0.3s;
+    }
+    .test-page-nav img {
+        width: 50px;
+    }
+</style>
+<header class="bg-faded w-100">
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-toggleable-md mr-lg-auto navbar-light">
+                <button class="navbar-toggler navbar-toggler-right mt-3" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="../img/logo.png">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#aboutCompany">Про компанію <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ourAdvantages">Наші переваги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ourBrands">Наші бренди</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#partnershipSection">Партнерство</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ourNews">Новини</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacts">Контакти</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="http://papirus.ua/index.php/uk/papirus-gurt-main/katalog">Каталог</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="float-lg-right mt-xl-4">
+                <div class="lang">
+                    <button type="button" class="btn btn-primary login-button" data-toggle="modal" data-target="#loginModal" role="button">Вхід</button>
+                    <button type="button" class="btn btn-outline-primary btn-sm lang-button active" role="button">UA</button>
+                    <button type="button" class="btn btn-outline-primary btn-sm lang-button" role="button">RU</button>
+                    <button type="button" class="btn btn-outline-primary btn-sm lang-button" role="button">EN</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<main>
+    <div class="news-article ">
+        <div class="container">
+            <div class="title clearfix w-100">
+                <h1 class="h1 mt-3 float-left">Insights-X 2017: приглашаем посетить наш стенд! </h1>
+                <span class="badge badge-default mt-3 ml-2">22.05.2017</span>
+            </div>
+
+            <div class="article-content">
+                <p>С другой стороны сложившаяся структура организации представляет собой интересный
+                    эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач.
+                    Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение
+                    нашей деятельности в значительной степени обуславливает создание направлений прогрессивного развития.
+                    Повседневная практика показывает, что укрепление и развитие структуры требуют от нас анализа дальнейших
+                    направлений развития.</p>
+            
+            
+                <p><img style="max-width: 295px;" src="../img/content/22528312_1195051140628148_7662629722666216517_n_(1).jpg" class="img-thumbnail float-left m-2">
+                    Равным образом укрепление и развитие структуры представляет собой интересный эксперимент
+                    проверки существенных финансовых и административных условий. Таким образом сложившаяся
+                    структура организации играет важную роль в формировании позиций, занимаемых участниками
+                    в отношении поставленных задач. Товарищи! рамки и место обучения кадров требуют от
+                    нас анализа направлений прогрессивного развития.</p>
+                <p>Товарищи! консультация с широким активом представляет собой интересный эксперимент
+                    проверки соответствующий условий активизации. Товарищи! постоянный количественный
+                    рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в
+                    формировании существенных финансовых и административных условий. Повседневная практика
+                    показывает, что рамки и место обучения кадров в значительной степени обуславливает
+                    создание существенных финансовых и административных условий. Задача организации,
+                    в особенности же постоянное информационно-пропагандистское обеспечение нашей
+                    деятельности представляет
+            
+                    собой интересный эксперимент проверки позиций,
+                    занимаемых участниками в отношении поставленных задач. Не следует, однако
+                    забывать, что начало повседневной работы по формированию позиции требуют
+                    от нас анализа системы обучения кадров, соответствует насущным потребностям.
+                    С другой стороны постоянное информационно-пропагандистское обеспечение нашей
+                    деятельности позволяет выполнять важные задания по разработке соответствующий
+                    условий активизации.</p>
+            
+                <p>Товарищи! консультация с широким активом представляет собой интересный эксперимент
+                    проверки соответствующий условий активизации. Товарищи! постоянный количественный
+                    рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в
+                    формировании существенных финансовых и административных условий. Повседневная практика
+                    показывает, что рамки и место обучения кадров в значительной степени обуславливает
+                    создание существенных финансовых и административных условий. Задача организации,
+                    в особенности же постоянное информационно-пропагандистское обеспечение нашей
+                    деятельности представляет
+            
+                    собой интересный эксперимент проверки позиций,
+                    занимаемых участниками в отношении поставленных задач. Не следует, однако
+                    забывать, что начало повседневной работы по формированию позиции требуют
+                    от нас анализа системы обучения кадров, соответствует насущным потребностям.
+                    С другой стороны постоянное информационно-пропагандистское обеспечение нашей
+                    деятельности позволяет выполнять важные задания по разработке соответствующий
+                    условий активизации.</p>
+                <p> <img style="max-width: 295px;" src="../img/content/22538868_1195050627294866_4055231520861513964_o_(3).jpg" class="float-right m-2 img-thumbnail">Товарищи! консультация с широким активом представляет собой интересный эксперимент
+                    проверки соответствующий условий активизации. Товарищи! постоянный количественный
+                    рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в
+                    формировании существенных финансовых и административных условий. Повседневная практика
+                    показывает, что рамки и место обучения кадров в значительной степени обуславливает
+                    создание существенных финансовых и административных условий. Задача организации,
+                    в особенности же постоянное информационно-пропагандистское обеспечение нашей
+                    деятельности представляет собой интересный эксперимент проверки позиций,
+                    занимаемых участниками в отношении поставленных задач. Не следует, однако
+                    забывать, что начало повседневной работы по формированию позиции требуют
+                    от нас анализа системы обучения кадров, соответствует насущным потребностям.
+                    С другой стороны постоянное информационно-пропагандистское обеспечение нашей
+                    деятельности позволяет выполнять важные задания по разработке соответствующий
+                    условий активизации.</p>
+                <p>Товарищи! консультация с широким активом представляет собой интересный эксперимент
+                    проверки соответствующий условий активизации. Товарищи! постоянный количественный
+                    рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в
+                    формировании существенных финансовых и административных условий. Повседневная практика
+                    показывает, что рамки и место обучения кадров в значительной степени обуславливает
+                    создание существенных финансовых и административных условий. Задача организации,
+                    в особенности же постоянное информационно-пропагандистское обеспечение нашей
+                    деятельности представляет
+            
+                    собой интересный эксперимент проверки позиций,
+                    занимаемых участниками в отношении поставленных задач. Не следует, однако
+                    забывать, что начало повседневной работы по формированию позиции требуют
+                    от нас анализа системы обучения кадров, соответствует насущным потребностям.
+                    С другой стороны постоянное информационно-пропагандистское обеспечение нашей
+                    деятельности позволяет выполнять важные задания по разработке соответствующий
+                    условий активизации.</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="partnershipModalLabel">Вхід в кабінет</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+                        <div class="col-sm-6 float-left">
+                            <div class="form-group">
+                                <label for="emailLoginInput">E-mail</label>
+                                <input type="email" class="form-control" id="emailLoginInput" placeholder="E-mail">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="phoneLoginInput">Пароль</label>
+                                <input type="password" class="form-control" id="phoneLoginInput" placeholder="Пароль">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-outline-primary" role="button">Вхід</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-faded">
+    <div class="w-100 text-center">
+        <span class="text-primary">© Папірус. 2017</span>
+    </div>
+</footer>
+
+</body>
+
+</html>
