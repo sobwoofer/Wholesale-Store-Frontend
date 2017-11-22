@@ -1,3 +1,8 @@
+
+> #### there is [demo][1]
+
+
+
 How to use
 -------------
 - you should to have git, nodejs, npm, gulp, bower 
@@ -19,3 +24,5 @@ bower i
 gulp
 ```
 - you get production project from sources in directory /build
+
+ [1]: http://homemagazin.volivan.com
