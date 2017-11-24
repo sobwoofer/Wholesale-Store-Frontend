@@ -45,13 +45,17 @@
                         <option>Не адрес</option>
                     </select>
                 </div>
-                <div class="form-group">
+                <div class="form-group has-success">
                     <label for="cartInputPhone">Телефон</label>
                     <input type="tel" class="form-control" id="cartInputPhone"placeholder="Телефон">
+                    <div class="form-control-feedback">Успешно.</div>
+                    <small class="form-text text-muted">Проверка телефона прошла успешно</small>
                 </div>
-                <div class="form-group">
+                <div class="form-group has-danger"> <!-- danger or success border is class .has-danger or .has-success-->
                     <label for="cartInputEmail">Email</label>
                     <input type="email" class="form-control" id="cartInputEmail"  placeholder="Email">
+                    <div class="form-control-feedback">Такой имейл существует</div>
+                    <small class="form-text text-muted">Введитие другую почту или восстановите доступ к существующему аккаунту</small>
                 </div>
                 <div class="form-group">
                     <label for="cartInputComment">Комментарий</label>
@@ -65,10 +69,12 @@
                 <div class="form-group">
                     <label for="cartInputAddProductArticle">Введите артикул товара</label>
                     <input type="text" class="form-control" id="cartInputAddProductArticle" placeholder="артикул">
+
                 </div>
-                <div class="form-group">
+                <div class="form-group has-danger"> <!-- danger or success border is class .has-danger or .has-success-->
                     <label for="cartInputAddProductQty">К-во</label>
                     <input type="text" class="form-control" id="cartInputAddProductQty" placeholder="К-во">
+                    <div class="form-control-feedback">Артикул не найден</div>
                 </div>
                 <button type="submit" class="btn btn-info" role="button">Добавить</button>
             </form>

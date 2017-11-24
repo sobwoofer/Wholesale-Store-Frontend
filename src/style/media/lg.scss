@@ -1,13 +1,45 @@
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-
-  header{
-    .login-button {
-      display: block;
-      width: 100%;
-      margin-bottom: 5px;
-      margin-top: 9px;
+  .site-body {
+    header{
+      .login-button {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+        margin-top: 9px;
+      }
     }
   }
+
+  .cabinet-body {
+    header {
+      .search-input {
+        width: 336px;
+      }
+    }
+
+  }
+
+
+
+  .second-menu {
+    .navbar-collapse {
+      font-size: 15px;
+      .navbar-nav {
+        .nav-item {
+          a {
+            position: relative;
+          }
+          .badge {
+            position: absolute;
+            top: -5px;
+            right: -4px;
+          }
+        }
+      }
+    }
+
+  }
+
 
   .about.section {
     .image-left{

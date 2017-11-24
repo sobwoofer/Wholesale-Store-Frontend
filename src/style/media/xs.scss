@@ -1,4 +1,10 @@
 @media screen and (max-width: 576px) {
+  .cabinet-body {
+    .lang {
+      position: inherit;
+    }
+  }
+
   header {
     nav {
       width: 100%;

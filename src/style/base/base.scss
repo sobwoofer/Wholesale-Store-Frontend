@@ -23,12 +23,24 @@ body {
 .second-menu {
   .navbar-collapse {
     font-size: 15px;
+    .navbar-nav {
+      .nav-item {
+        a {
+          //position: relative;
+        }
+        .badge {
+          position: relative;
+          top: -7px;
+        }
+      }
+    }
   }
   .mobile-menu-button {
     position: absolute;
     top: -73px;
     right: 89px;
   }
+
 }
 
 .wrpper_cartSideToggler{

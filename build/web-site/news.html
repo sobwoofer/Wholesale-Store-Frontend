@@ -62,7 +62,9 @@
         <a class="dropdown-item" href="/web-site/news.html">Все новости</a>
         <a class="dropdown-item" href="/web-site/article.html">Страница новости</a>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="/web-cabinet/flash-sale.html">Флеш Акция</a>
+        <a class="dropdown-item" href="/web-manager/index.html">Менеджер</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="/web-cabinet/index.html">Флеш Акция</a>
         <a class="dropdown-item" href="/web-cabinet/news.html">Новинки</a>
         <a class="dropdown-item" href="/web-cabinet/catalog.html">Каталог Таблица</a>
         <a class="dropdown-item" href="/web-cabinet/catalog-grid.html">Каталог плитка</a>
@@ -241,7 +243,7 @@
                 <nav class="m-auto" aria-label="...">
                     <ul class="pagination pagination-sm">
                         <li class="page-item disabled">
-                            <span class="page-link">Сюда</span>
+                            <span class="page-link"><i class="fa fa-angle-double-left" aria-hidden="true"></i></span>
                         </li>
                         <li class="page-item active">
                             <span class="page-link">
@@ -255,7 +257,7 @@
                         <li class="page-item"><span class="page-link" href="#">...</span></li>
                         <li class="page-item"><a class="page-link" href="#">123</a></li>
                         <li class="page-item">
-                            <a class="page-link" href="#">Туда</a>
+                            <a class="page-link" href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </nav>
@@ -281,9 +283,11 @@
                 <form>
                     <div class="row">
                         <div class="col-sm-6 float-left">
-                            <div class="form-group">
+                            <div class="form-group has-danger"> <!-- danger or success border is class .has-danger or .has-success-->
                                 <label for="emailLoginInput">E-mail</label>
                                 <input type="email" class="form-control" id="emailLoginInput" placeholder="E-mail">
+                                <div class="form-control-feedback">Такой имейл существует</div>
+                                <small class="form-text text-muted">Введитие другую почту или восстановите доступ к существующему аккаунту</small>
                             </div>
                         </div>
                         <div class="col-sm-6">

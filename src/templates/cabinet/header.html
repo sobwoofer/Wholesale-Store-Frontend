@@ -25,12 +25,19 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Помощь</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" target="_blank" href="#">Выход</a>
-                        </li>
                     </ul>
+                    <div class="float-lg-right">
+                        <div class="lang">
+                            <button type="button" class="btn btn-primary login-button" data-toggle="modal" data-target="#loginModal" role="button">Выход</button>
+                            <button type="button" class="btn btn-link btn-sm lang-button active" role="button">UA</button>
+                            <button type="button" class="btn btn-link btn-sm lang-button" role="button">RU</button>
+                            <button type="button" class="btn btn-link btn-sm lang-button" role="button">EN</button>
+                        </div>
+                    </div>
                 </div>
+
             </nav>
+
         </div>
     </div>
     <div class="second-menu bg-faded">
@@ -38,6 +45,7 @@
         <div class="container">
 
             //= modules/mobile-catalog.html
+
             <div class="row">
                 <div class="col-sm-3 hidden-md-down">
                     //= modules/top-catalog.html
@@ -61,17 +69,26 @@
                                 </li>
                             </ul>
                             <ul class="navbar-nav float-lg-right">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Флеш-акция</a>
+                                <li class="hidden-lg-up">
+                                    <div class="float-lg-right text-center p-1">
+                                        <div class="lang">
+                                            <button type="button" class="btn btn-link btn-sm lang-button active" role="button">UA</button>
+                                            <button type="button" class="btn btn-link btn-sm lang-button" role="button">RU</button>
+                                            <button type="button" class="btn btn-link btn-sm lang-button" role="button">EN</button>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Новинки</a>
+                                    <a class="nav-link" href="#">Флеш-акция <span class="badge badge-default">15</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" target="_blank" href="#">Избранное</a>
+                                    <a class="nav-link" href="#">Новинки <span class="badge badge-default">15</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" target="_blank" href="#">Ожидаемые</a>
+                                    <a class="nav-link" target="_blank" href="#">Избранное <span class="badge badge-default">15</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" target="_blank" href="#">Ожидаемые <span class="badge badge-default">15</span></a>
                                 </li>
                                 <li class="hidden-lg-up">
                                     <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -84,11 +101,12 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" target="_blank" href="#">Корзина</a>
+                                    <a class="nav-link" target="_blank" href="#">Корзина <span class="badge badge-default">15</span></a>
                                 </li>
                             </ul>
                         </div>
                     </nav>
+
                     <div class="mobile-search hidden-lg-up">
                         <form class="form-inline my-2 my-lg-0 mr-auto">
                             <input class="form-control search-input col-9 col-sm-9 col-md-10 mr-auto" type="text" placeholder="Поиск">

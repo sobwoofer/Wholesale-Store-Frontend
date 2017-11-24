@@ -62,7 +62,9 @@
         <a class="dropdown-item" href="/web-site/news.html">Все новости</a>
         <a class="dropdown-item" href="/web-site/article.html">Страница новости</a>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="/web-cabinet/flash-sale.html">Флеш Акция</a>
+        <a class="dropdown-item" href="/web-manager/index.html">Менеджер</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="/web-cabinet/index.html">Флеш Акция</a>
         <a class="dropdown-item" href="/web-cabinet/news.html">Новинки</a>
         <a class="dropdown-item" href="/web-cabinet/catalog.html">Каталог Таблица</a>
         <a class="dropdown-item" href="/web-cabinet/catalog-grid.html">Каталог плитка</a>
@@ -188,12 +190,19 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Помощь</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" target="_blank" href="#">Выход</a>
-                        </li>
                     </ul>
+                    <div class="float-lg-right">
+                        <div class="lang">
+                            <button type="button" class="btn btn-primary login-button" data-toggle="modal" data-target="#loginModal" role="button">Выход</button>
+                            <button type="button" class="btn btn-link btn-sm lang-button active" role="button">UA</button>
+                            <button type="button" class="btn btn-link btn-sm lang-button" role="button">RU</button>
+                            <button type="button" class="btn btn-link btn-sm lang-button" role="button">EN</button>
+                        </div>
+                    </div>
                 </div>
+
             </nav>
+
         </div>
     </div>
     <div class="second-menu bg-faded">
@@ -376,6 +385,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-sm-3 hidden-md-down">
                     <div class="catalog">
@@ -635,17 +645,26 @@
                                 </li>
                             </ul>
                             <ul class="navbar-nav float-lg-right">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Флеш-акция</a>
+                                <li class="hidden-lg-up">
+                                    <div class="float-lg-right text-center p-1">
+                                        <div class="lang">
+                                            <button type="button" class="btn btn-link btn-sm lang-button active" role="button">UA</button>
+                                            <button type="button" class="btn btn-link btn-sm lang-button" role="button">RU</button>
+                                            <button type="button" class="btn btn-link btn-sm lang-button" role="button">EN</button>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Новинки</a>
+                                    <a class="nav-link" href="#">Флеш-акция <span class="badge badge-default">15</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" target="_blank" href="#">Избранное</a>
+                                    <a class="nav-link" href="#">Новинки <span class="badge badge-default">15</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" target="_blank" href="#">Ожидаемые</a>
+                                    <a class="nav-link" target="_blank" href="#">Избранное <span class="badge badge-default">15</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" target="_blank" href="#">Ожидаемые <span class="badge badge-default">15</span></a>
                                 </li>
                                 <li class="hidden-lg-up">
                                     <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -658,11 +677,12 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" target="_blank" href="#">Корзина</a>
+                                    <a class="nav-link" target="_blank" href="#">Корзина <span class="badge badge-default">15</span></a>
                                 </li>
                             </ul>
                         </div>
                     </nav>
+
                     <div class="mobile-search hidden-lg-up">
                         <form class="form-inline my-2 my-lg-0 mr-auto">
                             <input class="form-control search-input col-9 col-sm-9 col-md-10 mr-auto" type="text" placeholder="Поиск">
@@ -796,14 +816,14 @@
                     </div>
                     
                     <div class="table-responsive">
-                        <table class="product-list-table table  table-sm">
+                        <table class="product-list-table table table-sm table-hover">
                             <thead class="">
                                 <tr>
                                     <th class=""></th>
-                                    <th class="text-center">Артикул</th>
-                                    <th class="text-center" colspan="2">Название</th>
-                                    <th class="text-center">Остаток</th>
-                                    <th class="text-center">Цена</th>
+                                    <th class="text-center"><a href="#"><i class="fa fa-sort-alpha-desc" aria-hidden="true"></i></a> Артикул</th>
+                                    <th class="text-center" colspan="2"><a href="#"><i class="fa fa-sort-alpha-desc" aria-hidden="true"></i></a> Название</th>
+                                    <th class="text-center"><a href="#"><i class="fa fa-sort-alpha-desc" aria-hidden="true"></i></a> Остаток</th>
+                                    <th class="text-center"><a href="#"><i class="fa fa-sort-alpha-desc" aria-hidden="true"></i></a> Цена</th>
                                     <th class="text-center">Кратность<br>
                                         упаковки</th>
                                     <th class="text-center">Кол-во</th>
@@ -826,8 +846,9 @@
                                     <td class="text-center">@125.69</td>
                                     <td class="text-center">1/50/200</td>
                                     <td class="text-center"><input class="qty form-control text-center" type="text" value="23"></td>
-                                    <td class="text-center"><button class="add-to-wishlist btn btn-sm btn-primary" role="button"><i class="fa fa-star" aria-hidden="true"></i></button></td>
-                                    <td><button class="btn btn-primary btn-small" role="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> </td>
+                                    <td class="text-center"><button data-toggle="modal" data-target="#addedToWishListModal" class="add-to-wishlist btn btn-sm text-warning" role="button"><i class="fa fa-star-o" aria-hidden="true"></i></button></td>
+                                
+                                    <td><button class="btn text-primary btn-sm" data-toggle="modal" data-target="#addedToCartModal" role="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> </td>
                                 </tr>
                                 <tr>
                                     <td class="">
@@ -843,8 +864,8 @@
                                     <td class="text-center">@125.69</td>
                                     <td class="text-center">1/50/200</td>
                                     <td class="text-center"><input class="qty form-control text-center" type="text" value="23"></td>
-                                    <td class="text-center"><button class="add-to-wishlist btn btn-sm btn-primary" role="button"><i class="fa fa-star" aria-hidden="true"></i></button></td>
-                                    <td><button class="btn btn-primary btn-small" role="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> </td>
+                                    <td class="text-center"><button data-toggle="modal" data-target="#addedToWishListModal" class="add-to-wishlist btn btn-sm text-warning" role="button"><i class="fa fa-star" aria-hidden="true"></i></button></td>
+                                    <td><button class="btn btn-sm text-success" data-toggle="modal" data-target="#addedToCartModal" role="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> </td>
                                 </tr>
                                 <tr>
                                     <td class="">
@@ -860,8 +881,9 @@
                                     <td class="text-center">@125.69</td>
                                     <td class="text-center">1/50/200</td>
                                     <td class="text-center"><input class="qty form-control text-center" type="text" value="23"></td>
-                                    <td class="text-center"><button class="add-to-wishlist btn btn-sm btn-primary" role="button"><i class="fa fa-star" aria-hidden="true"></i></button></td>
-                                    <td><button class="btn btn-primary btn-small" role="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> </td>
+                                    <td class="text-center"><button data-toggle="modal" data-target="#addedToWishListModal" class="add-to-wishlist btn btn-sm text-warning" role="button"><i class="fa fa-star-o" aria-hidden="true"></i></button></td>
+                                
+                                    <td><button class="btn text-primary btn-sm" data-toggle="modal" data-target="#addedToCartModal" role="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> </td>
                                 </tr>
                                 <tr>
                                     <td class="">
@@ -877,8 +899,8 @@
                                     <td class="text-center">@125.69</td>
                                     <td class="text-center">1/50/200</td>
                                     <td class="text-center"><input class="qty form-control text-center" type="text" value="23"></td>
-                                    <td class="text-center"><button class="add-to-wishlist btn btn-sm btn-primary" role="button"><i class="fa fa-star" aria-hidden="true"></i></button></td>
-                                    <td><button class="btn btn-primary btn-small" role="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> </td>
+                                    <td class="text-center"><button data-toggle="modal" data-target="#addedToWishListModal" class="add-to-wishlist btn btn-sm text-warning" role="button"><i class="fa fa-star" aria-hidden="true"></i></button></td>
+                                    <td><button class="btn btn-sm text-success" data-toggle="modal" data-target="#addedToCartModal" role="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> </td>
                                 </tr>
                                 <tr>
                                     <td class="">
@@ -894,8 +916,9 @@
                                     <td class="text-center">@125.69</td>
                                     <td class="text-center">1/50/200</td>
                                     <td class="text-center"><input class="qty form-control text-center" type="text" value="23"></td>
-                                    <td class="text-center"><button class="add-to-wishlist btn btn-sm btn-primary" role="button"><i class="fa fa-star" aria-hidden="true"></i></button></td>
-                                    <td><button class="btn btn-primary btn-small" role="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> </td>
+                                    <td class="text-center"><button data-toggle="modal" data-target="#addedToWishListModal" class="add-to-wishlist btn btn-sm text-warning" role="button"><i class="fa fa-star-o" aria-hidden="true"></i></button></td>
+                                
+                                    <td><button class="btn text-primary btn-sm" data-toggle="modal" data-target="#addedToCartModal" role="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> </td>
                                 </tr>
                                 <tr>
                                     <td class="">
@@ -911,8 +934,9 @@
                                     <td class="text-center">@125.69</td>
                                     <td class="text-center">1/50/200</td>
                                     <td class="text-center"><input class="qty form-control text-center" type="text" value="23"></td>
-                                    <td class="text-center"><button class="add-to-wishlist btn btn-sm btn-primary" role="button"><i class="fa fa-star" aria-hidden="true"></i></button></td>
-                                    <td><button class="btn btn-primary btn-small" role="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> </td>
+                                    <td class="text-center"><button data-toggle="modal" data-target="#addedToWishListModal" class="add-to-wishlist btn btn-sm text-warning" role="button"><i class="fa fa-star-o" aria-hidden="true"></i></button></td>
+                                
+                                    <td><button class="btn text-primary btn-sm" data-toggle="modal" data-target="#addedToCartModal" role="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> </td>
                                 </tr>
                                 <tr>
                                     <td class="">
@@ -928,8 +952,9 @@
                                     <td class="text-center">@125.69</td>
                                     <td class="text-center">1/50/200</td>
                                     <td class="text-center"><input class="qty form-control text-center" type="text" value="23"></td>
-                                    <td class="text-center"><button class="add-to-wishlist btn btn-sm btn-primary" role="button"><i class="fa fa-star" aria-hidden="true"></i></button></td>
-                                    <td><button class="btn btn-primary btn-small" role="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> </td>
+                                    <td class="text-center"><button data-toggle="modal" data-target="#addedToWishListModal" class="add-to-wishlist btn btn-sm text-warning" role="button"><i class="fa fa-star-o" aria-hidden="true"></i></button></td>
+                                
+                                    <td><button class="btn text-primary btn-sm" data-toggle="modal" data-target="#addedToCartModal" role="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button> </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -951,14 +976,14 @@
                                         <div class="row">
                                             <div class="pt-2 w-100">
                                                 <div class="w-25 float-left text-center">
-                                                    <button role="button" class="btn btn-sm btn-primary add-to-wishlist">
+                                                    <button role="button" data-toggle="modal" data-target="#addedToWishListModal" class="btn btn-sm text-warning add-to-wishlist">
                                                         <i class="fa fa-star-o" aria-hidden="true"></i></button>
                                                 </div>
                                                 <div class="col-6 float-left text-center">
                                                     <input class="qty form-control text-center" type="text" value="23">
                                                 </div>
                                                 <div class="w-25 float-left text-center">
-                                                    <button role="button" class="add-to-cart btn btn-sm btn-primary">
+                                                    <button role="button"  data-toggle="modal" data-target="#addedToCartModal" class="add-to-cart btn btn-sm text-primary">
                                                         <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
                                                 </div>
                                             </div>
@@ -980,14 +1005,14 @@
                                         <div class="row">
                                             <div class="pt-2 w-100">
                                                 <div class="w-25 float-left text-center">
-                                                    <button role="button" class="btn btn-sm btn-primary add-to-wishlist">
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i></button>
+                                                    <button role="button" data-toggle="modal" data-target="#addedToWishListModal" class="btn btn-sm text-warning add-to-wishlist">
+                                                        <i class="fa fa-star" aria-hidden="true"></i></button>
                                                 </div>
                                                 <div class="col-6 float-left text-center">
                                                     <input class="qty form-control text-center" type="text" value="23">
                                                 </div>
                                                 <div class="w-25 float-left text-center">
-                                                    <button role="button" class="add-to-cart btn btn-sm btn-primary">
+                                                    <button role="button" data-toggle="modal" data-target="#addedToCartModal" class="add-to-cart btn btn-sm text-success">
                                                         <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
                                                 </div>
                                             </div>
@@ -1009,14 +1034,14 @@
                                         <div class="row">
                                             <div class="pt-2 w-100">
                                                 <div class="w-25 float-left text-center">
-                                                    <button role="button" class="btn btn-sm btn-primary add-to-wishlist">
+                                                    <button role="button" data-toggle="modal" data-target="#addedToWishListModal" class="btn btn-sm text-warning add-to-wishlist">
                                                         <i class="fa fa-star-o" aria-hidden="true"></i></button>
                                                 </div>
                                                 <div class="col-6 float-left text-center">
                                                     <input class="qty form-control text-center" type="text" value="23">
                                                 </div>
                                                 <div class="w-25 float-left text-center">
-                                                    <button role="button" class="add-to-cart btn btn-sm btn-primary">
+                                                    <button role="button"  data-toggle="modal" data-target="#addedToCartModal" class="add-to-cart btn btn-sm text-primary">
                                                         <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
                                                 </div>
                                             </div>
@@ -1038,14 +1063,14 @@
                                         <div class="row">
                                             <div class="pt-2 w-100">
                                                 <div class="w-25 float-left text-center">
-                                                    <button role="button" class="btn btn-sm btn-primary add-to-wishlist">
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i></button>
+                                                    <button role="button" data-toggle="modal" data-target="#addedToWishListModal" class="btn btn-sm text-warning add-to-wishlist">
+                                                        <i class="fa fa-star" aria-hidden="true"></i></button>
                                                 </div>
                                                 <div class="col-6 float-left text-center">
                                                     <input class="qty form-control text-center" type="text" value="23">
                                                 </div>
                                                 <div class="w-25 float-left text-center">
-                                                    <button role="button" class="add-to-cart btn btn-sm btn-primary">
+                                                    <button role="button" data-toggle="modal" data-target="#addedToCartModal" class="add-to-cart btn btn-sm text-success">
                                                         <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
                                                 </div>
                                             </div>
@@ -1067,14 +1092,14 @@
                                         <div class="row">
                                             <div class="pt-2 w-100">
                                                 <div class="w-25 float-left text-center">
-                                                    <button role="button" class="btn btn-sm btn-primary add-to-wishlist">
+                                                    <button role="button" data-toggle="modal" data-target="#addedToWishListModal" class="btn btn-sm text-warning add-to-wishlist">
                                                         <i class="fa fa-star-o" aria-hidden="true"></i></button>
                                                 </div>
                                                 <div class="col-6 float-left text-center">
                                                     <input class="qty form-control text-center" type="text" value="23">
                                                 </div>
                                                 <div class="w-25 float-left text-center">
-                                                    <button role="button" class="add-to-cart btn btn-sm btn-primary">
+                                                    <button role="button"  data-toggle="modal" data-target="#addedToCartModal" class="add-to-cart btn btn-sm text-primary">
                                                         <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
                                                 </div>
                                             </div>
@@ -1096,14 +1121,14 @@
                                         <div class="row">
                                             <div class="pt-2 w-100">
                                                 <div class="w-25 float-left text-center">
-                                                    <button role="button" class="btn btn-sm btn-primary add-to-wishlist">
+                                                    <button role="button" data-toggle="modal" data-target="#addedToWishListModal" class="btn btn-sm text-warning add-to-wishlist">
                                                         <i class="fa fa-star-o" aria-hidden="true"></i></button>
                                                 </div>
                                                 <div class="col-6 float-left text-center">
                                                     <input class="qty form-control text-center" type="text" value="23">
                                                 </div>
                                                 <div class="w-25 float-left text-center">
-                                                    <button role="button" class="add-to-cart btn btn-sm btn-primary">
+                                                    <button role="button"  data-toggle="modal" data-target="#addedToCartModal" class="add-to-cart btn btn-sm text-primary">
                                                         <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
                                                 </div>
                                             </div>
@@ -1132,7 +1157,7 @@
                     <nav class="float-left" aria-label="...">
                         <ul class="pagination pagination-sm">
                             <li class="page-item disabled">
-                                <span class="page-link">Сюда</span>
+                                <span class="page-link"><i class="fa fa-angle-double-left" aria-hidden="true"></i></span>
                             </li>
                             <li class="page-item active">
                                 <span class="page-link">
@@ -1146,7 +1171,7 @@
                             <li class="page-item"><span class="page-link" href="#">...</span></li>
                             <li class="page-item"><a class="page-link" href="#">123</a></li>
                             <li class="page-item">
-                                <a class="page-link" href="#">Туда</a>
+                                <a class="page-link" href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                             </li>
                         </ul>
                     </nav>
