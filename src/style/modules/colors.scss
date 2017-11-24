@@ -1,0 +1,49 @@
+.btn-primary {
+  background: #049;
+  border-color: #002c65;
+}
+
+.text-primary {
+  color: #049!important
+}
+
+.page-item.active .page-link{
+  background-color: #049;
+  border-color: #002c65;
+}
+
+.btn-outline-primary:hover {
+  background: #049;
+  border-color: #002c65;
+}
+.btn-outline-primary {
+  color: #049;
+}
+.text-primary:hover {
+  color: #0056c1!important;
+}
+a {
+  color: #049;
+}
+a:hover {
+  color: #0056c1;
+}
+
+.form-control:focus {
+  border-color: #049;
+}
+
+.list-group-item.active {
+  background-color: #049;
+  border-color: #002c65;
+}
+
+.btn.focus, .btn:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 2px rgba(0, 89, 165, 0.25);
+  box-shadow: 0 0 0 2px rgba(0, 95, 177, 0.25);
+}
+
+.btn-link {
+  color: #049;
+}

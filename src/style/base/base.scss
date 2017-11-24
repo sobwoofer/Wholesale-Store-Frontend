@@ -62,3 +62,11 @@ body {
     }
   }
 }
+
+.close.custom-close {
+  right: 5px;
+  position: absolute;
+  font-size: 32px;
+  top: -2px;
+  z-index: 99;
+}
