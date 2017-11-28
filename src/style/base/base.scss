@@ -29,8 +29,9 @@ body {
           //position: relative;
         }
         .badge {
-          position: relative;
-          top: -7px;
+          position: absolute;
+          top: -2px;
+          right: 10px;
         }
       }
     }
