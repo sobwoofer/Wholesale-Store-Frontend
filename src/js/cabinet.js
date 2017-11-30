@@ -38,4 +38,8 @@ $(function () {
     });
 });
 
+
+// add to cart and add to wish list
+//= source/add-to.js
+
 //= source/mobile-catalog.js

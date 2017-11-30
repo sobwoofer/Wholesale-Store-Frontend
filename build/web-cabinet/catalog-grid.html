@@ -66,6 +66,7 @@
         <div class="dropdown-divider"></div>
         <a class="dropdown-item" href="/web-cabinet/index.html">Флеш Акция</a>
         <a class="dropdown-item" href="/web-cabinet/news.html">Новинки</a>
+        <a class="dropdown-item" href="/web-cabinet/categories.html">Категории</a>
         <a class="dropdown-item" href="/web-cabinet/catalog.html">Каталог Таблица</a>
         <a class="dropdown-item" href="/web-cabinet/catalog-grid.html">Каталог плитка</a>
         <a class="dropdown-item" href="/web-cabinet/cart.html">Корзина</a>
@@ -107,6 +108,9 @@
     }
     .test-page-nav img {
         width: 50px;
+    }
+    .test-page-nav .dropdown-menu {
+        margin-top: -1px;
     }
 </style>
 <header class="w-100">
@@ -774,16 +778,6 @@
                     </div>
                     <div class="catalog-filter side-content float-left w-100">
                         <div class="gray">
-                            <p class="filter-title pull-left"><span class="icon"><img src="../img/icons/yes-icon.png" alt=""></span>ВЫБРАНО</p>
-                            <a href="#/" class="filter-title pull-right">
-                                <small><span class="icon"><img src="../img/icons/trash.png" alt=""></span>сбросить</small>
-                            </a>
-                            <div class="clearfix"></div>
-                            <a href="#" class="fiter-select-item">Economix </a>
-                            <a href="#" class="fiter-select-item">Economix </a>
-                            <a href="#" class="fiter-select-item">Economix </a>
-                        </div>
-                        <div class="gray">
                             <p class="filter-title"><span class="icon"><img src="../img/icons/filter-icon.png" alt=""></span>ФИЛЬТР ХАРАКТЕРИСТИК</p>
                             <p><b>Цена</b></p>
                             <div class="manufacturer">
@@ -868,19 +862,19 @@
                                 <div class="card-block">
                                     <h6 class="card-title"><a href="#" data-toggle="modal" data-target="#productModal">Фломастеры Centropen TEXTILE 2739, 6 шт.</a></h6>
                                     <div class="card-text article text-center">Артикул: 3256</div>
-                                    <div class="card-text text-center"><div class="price">125.69 грн.</div> </div>
+                                    <div class="card-text text-center"><div class="price"><strong>125.69 грн.</strong></div> </div>
                                     <div class="card-text text-center"><div class="balance">Осталось 57шт</div> </div>
                                     <div class="row">
                                         <div class="pt-2 w-100">
                                             <div class="w-25 float-left text-center">
-                                                <button role="button" data-toggle="modal" data-target="#addedToWishListModal" class="btn btn-sm text-warning add-to-wishlist">
+                                                <button role="button" class="wishlist-btn btn btn-sm text-warning add-to-wishlist">
                                                     <i class="fa fa-star-o" aria-hidden="true"></i></button>
                                             </div>
                                             <div class="col-6 float-left text-center">
                                                 <input class="qty form-control text-center" type="text" value="23">
                                             </div>
                                             <div class="w-25 float-left text-center">
-                                                <button role="button"  data-toggle="modal" data-target="#addedToCartModal" class="add-to-cart btn btn-sm text-primary">
+                                                <button role="button" class="add-to-cart cart-btn btn btn-sm text-primary">
                                                     <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
                                             </div>
                                         </div>
@@ -897,19 +891,19 @@
                                 <div class="card-block">
                                     <h6 class="card-title"><a href="#" data-toggle="modal" data-target="#productModal">Фломастеры Centropen TEXTILE 2739, 6 шт.</a></h6>
                                     <div class="card-text article text-center">Артикул: 3256</div>
-                                    <div class="card-text text-center"><div class="price">125.69 грн.</div> </div>
+                                    <div class="card-text text-center"><div class="price"><strong>125.69 грн.</strong></div> </div>
                                     <div class="card-text text-center"><div class="balance">Осталось 57шт</div> </div>
                                     <div class="row">
                                         <div class="pt-2 w-100">
                                             <div class="w-25 float-left text-center">
-                                                <button role="button" data-toggle="modal" data-target="#addedToWishListModal" class="btn btn-sm text-warning add-to-wishlist">
+                                                <button role="button" class="wishlist-btn btn btn-sm text-warning add-to-wishlist">
                                                     <i class="fa fa-star" aria-hidden="true"></i></button>
                                             </div>
                                             <div class="col-6 float-left text-center">
                                                 <input class="qty form-control text-center" type="text" value="23">
                                             </div>
                                             <div class="w-25 float-left text-center">
-                                                <button role="button" data-toggle="modal" data-target="#addedToCartModal" class="add-to-cart btn btn-sm text-success">
+                                                <button role="button"  class="add-to-cart cart-btn btn btn-sm text-success">
                                                     <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
                                             </div>
                                         </div>
@@ -926,19 +920,19 @@
                                 <div class="card-block">
                                     <h6 class="card-title"><a href="#" data-toggle="modal" data-target="#productModal">Фломастеры Centropen TEXTILE 2739, 6 шт.</a></h6>
                                     <div class="card-text article text-center">Артикул: 3256</div>
-                                    <div class="card-text text-center"><div class="price">125.69 грн.</div> </div>
+                                    <div class="card-text text-center"><div class="price"><strong>125.69 грн.</strong></div> </div>
                                     <div class="card-text text-center"><div class="balance">Осталось 57шт</div> </div>
                                     <div class="row">
                                         <div class="pt-2 w-100">
                                             <div class="w-25 float-left text-center">
-                                                <button role="button" data-toggle="modal" data-target="#addedToWishListModal" class="btn btn-sm text-warning add-to-wishlist">
+                                                <button role="button" class="wishlist-btn btn btn-sm text-warning add-to-wishlist">
                                                     <i class="fa fa-star-o" aria-hidden="true"></i></button>
                                             </div>
                                             <div class="col-6 float-left text-center">
                                                 <input class="qty form-control text-center" type="text" value="23">
                                             </div>
                                             <div class="w-25 float-left text-center">
-                                                <button role="button"  data-toggle="modal" data-target="#addedToCartModal" class="add-to-cart btn btn-sm text-primary">
+                                                <button role="button" class="add-to-cart cart-btn btn btn-sm text-primary">
                                                     <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
                                             </div>
                                         </div>
@@ -955,19 +949,19 @@
                                 <div class="card-block">
                                     <h6 class="card-title"><a href="#" data-toggle="modal" data-target="#productModal">Фломастеры Centropen TEXTILE 2739, 6 шт.</a></h6>
                                     <div class="card-text article text-center">Артикул: 3256</div>
-                                    <div class="card-text text-center"><div class="price">125.69 грн.</div> </div>
+                                    <div class="card-text text-center"><div class="price"><strong>125.69 грн.</strong></div> </div>
                                     <div class="card-text text-center"><div class="balance">Осталось 57шт</div> </div>
                                     <div class="row">
                                         <div class="pt-2 w-100">
                                             <div class="w-25 float-left text-center">
-                                                <button role="button" data-toggle="modal" data-target="#addedToWishListModal" class="btn btn-sm text-warning add-to-wishlist">
+                                                <button role="button" class="wishlist-btn btn btn-sm text-warning add-to-wishlist">
                                                     <i class="fa fa-star" aria-hidden="true"></i></button>
                                             </div>
                                             <div class="col-6 float-left text-center">
                                                 <input class="qty form-control text-center" type="text" value="23">
                                             </div>
                                             <div class="w-25 float-left text-center">
-                                                <button role="button" data-toggle="modal" data-target="#addedToCartModal" class="add-to-cart btn btn-sm text-success">
+                                                <button role="button"  class="add-to-cart cart-btn btn btn-sm text-success">
                                                     <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
                                             </div>
                                         </div>
@@ -984,19 +978,19 @@
                                 <div class="card-block">
                                     <h6 class="card-title"><a href="#" data-toggle="modal" data-target="#productModal">Фломастеры Centropen TEXTILE 2739, 6 шт.</a></h6>
                                     <div class="card-text article text-center">Артикул: 3256</div>
-                                    <div class="card-text text-center"><div class="price">125.69 грн.</div> </div>
+                                    <div class="card-text text-center"><div class="price"><strong>125.69 грн.</strong></div> </div>
                                     <div class="card-text text-center"><div class="balance">Осталось 57шт</div> </div>
                                     <div class="row">
                                         <div class="pt-2 w-100">
                                             <div class="w-25 float-left text-center">
-                                                <button role="button" data-toggle="modal" data-target="#addedToWishListModal" class="btn btn-sm text-warning add-to-wishlist">
+                                                <button role="button" class="wishlist-btn btn btn-sm text-warning add-to-wishlist">
                                                     <i class="fa fa-star-o" aria-hidden="true"></i></button>
                                             </div>
                                             <div class="col-6 float-left text-center">
                                                 <input class="qty form-control text-center" type="text" value="23">
                                             </div>
                                             <div class="w-25 float-left text-center">
-                                                <button role="button"  data-toggle="modal" data-target="#addedToCartModal" class="add-to-cart btn btn-sm text-primary">
+                                                <button role="button" class="add-to-cart cart-btn btn btn-sm text-primary">
                                                     <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
                                             </div>
                                         </div>
@@ -1013,19 +1007,19 @@
                                 <div class="card-block">
                                     <h6 class="card-title"><a href="#" data-toggle="modal" data-target="#productModal">Фломастеры Centropen TEXTILE 2739, 6 шт.</a></h6>
                                     <div class="card-text article text-center">Артикул: 3256</div>
-                                    <div class="card-text text-center"><div class="price">125.69 грн.</div> </div>
+                                    <div class="card-text text-center"><div class="price"><strong>125.69 грн.</strong></div> </div>
                                     <div class="card-text text-center"><div class="balance">Осталось 57шт</div> </div>
                                     <div class="row">
                                         <div class="pt-2 w-100">
                                             <div class="w-25 float-left text-center">
-                                                <button role="button" data-toggle="modal" data-target="#addedToWishListModal" class="btn btn-sm text-warning add-to-wishlist">
+                                                <button role="button" class="wishlist-btn btn btn-sm text-warning add-to-wishlist">
                                                     <i class="fa fa-star-o" aria-hidden="true"></i></button>
                                             </div>
                                             <div class="col-6 float-left text-center">
                                                 <input class="qty form-control text-center" type="text" value="23">
                                             </div>
                                             <div class="w-25 float-left text-center">
-                                                <button role="button"  data-toggle="modal" data-target="#addedToCartModal" class="add-to-cart btn btn-sm text-primary">
+                                                <button role="button" class="add-to-cart cart-btn btn btn-sm text-primary">
                                                     <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
                                             </div>
                                         </div>
@@ -1123,55 +1117,6 @@
 
                 <button role="button" class="add-to-cart btn btn-primary">
                     <i class="fa fa-cart-arrow-down" aria-hidden="true"></i> В корзину</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade " id="addedToCartModal" tabindex="-1" role="dialog" aria-labelledby="addedToCartModalLongTitle" aria-hidden="true">
-    <div class="modal-dialog modal-lg product-modal" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="addedToCartModalLongTitle">Товар успешно добавлен в корзину.</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="alert alert-success" role="alert">
-                    <strong>Товар: Фломастеры Centropen TEXTILE 2739, 6 шт. - добавлен в корзину</strong><br> Выберите дальнейшее действие
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button role="button"  data-dismiss="modal" aria-label="Close" class="btn btn-primary">
-                    Продолжить покупки</button>
-
-
-                <a href="#" role="button" class="add-to-cart btn btn-success">Оформить заказ</a>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade " id="addedToWishListModal" tabindex="-1" role="dialog" aria-labelledby="addedToWishListModalModallLongTitle" aria-hidden="true">
-    <div class="modal-dialog modal-lg product-modal" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="addedToWishListLongTitle">Товар успешно добавлен в список желаний</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="alert alert-success" role="alert">
-                    <strong>Товар: Фломастеры Centropen TEXTILE 2739, 6 шт. - добавлен в список желаний</strong><br> Выберите дальнейшее действие
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button role="button"  data-dismiss="modal" aria-label="Close" class="btn btn-primary">
-                    Продолжить покупки</button>
-
-
-                <a href="#" role="button" class="add-to-cart btn btn-success">Перейти в список желаний</a>
             </div>
         </div>
     </div>
