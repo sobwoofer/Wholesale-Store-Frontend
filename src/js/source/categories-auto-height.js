@@ -11,14 +11,14 @@ $(function(){
         var sizes = [];
         var count = [];
         var maxSize = 0;
-        var remainder = jQueryElements.length%num;
+        var remainder = jQueryElements.length% num;
         jQueryElements.each(function(i, e){
             sizes.push(parseInt($(e).height()));
             count.push(parseInt(i));
             if (jQueryElements.length - i <= remainder) {
                 num = remainder;
             }
-            if (i == 0 || (i+1)%num == 0) {
+            if ( (i+1) % num == 0) {
                 maxSize = Math.max.apply(null, sizes);
                 count.forEach(function (e, i){
                     $('.categories .item:nth-child(' + (e + 1) + ')').height(maxSize);
@@ -27,6 +27,7 @@ $(function(){
                 count = [];
                 maxSize = 0
             }
+
         });
     }
 });

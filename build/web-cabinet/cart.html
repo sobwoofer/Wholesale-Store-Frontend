@@ -838,20 +838,26 @@
                             </form>
                         </div>
                         <div class="tab-pane" id="fastAdd" role="tabpanel">
-                            <p class="h6 m-2">БЫСТРОЕ ДОБАВЛЕНИЕ ТОВАРА</p>
+                            <p class="h6 p-2 mt-1 bg-faded">БЫСТРОЕ ДОБАВЛЕНИЕ ТОВАРА</p>
                             <form role="form">
-                                <div class="form-group">
-                                    <label for="cartInputAddProductArticle">Введите артикул товара</label>
-                                    <input type="text" class="form-control" id="cartInputAddProductArticle" placeholder="артикул">
-                
+                                <div class="col-sm-6 float-left p-0">
+                                    <div class="form-group has-danger">
+                                        <!--<label for="cartInputAddProductArticle">Введите артикул товара</label>-->
+                                        <input type="text" class="form-control" id="cartInputAddProductArticle" placeholder="артикул">
+                                        <div class="form-control-feedback">Артикул не найден</div>
+                                    </div>
                                 </div>
-                                <div class="form-group has-danger"> <!-- danger or success border is class .has-danger or .has-success-->
-                                    <label for="cartInputAddProductQty">К-во</label>
-                                    <input type="text" class="form-control" id="cartInputAddProductQty" placeholder="К-во">
-                                    <div class="form-control-feedback">Артикул не найден</div>
+                                <div class="col-sm-6 float-left pr-0">
+                                    <div class="form-group"> <!-- danger or success border is class .has-danger or .has-success-->
+                                        <!--<label for="cartInputAddProductQty">К-во</label>-->
+                                        <input type="text" class="form-control" id="cartInputAddProductQty" placeholder="К-во">
+                                    </div>
                                 </div>
-                                <button type="submit" class="btn btn-info" role="button">Добавить</button>
+                                <div class="w-100 clearfix">
+                                    <button type="submit" class="btn btn-info" role="button">Добавить</button>
+                                </div>
                             </form>
+                            <hr>
                             <div class="video-info mt-2">
                                 <div class="title">Инструкция</div>
                                 <div class="description">
@@ -859,7 +865,7 @@
                                 </div>
                             </div>
                             <hr>
-                            <p class="h6 m-2">МНОЖЕСТВЕННОЕ
+                            <p class="h6 p-2 bg-faded">МНОЖЕСТВЕННОЕ
                                 ДОБАВЛЕНИЕ ТОВАРОВ</p>
                             <p class="">Загрузите *.scv файл, чтобы добавить одновременно несколько товаров.
                                 Скачайте файл для примера</p>
@@ -870,6 +876,7 @@
                                 </div>
                                   <button type="submit" class="btn btn-info" role="button">Добавить</button>
                             </form>
+                            <hr>
                             <div class="video-info mt-2">
                                 <div class="title">Инструкция</div>
                                 <div class="description">
@@ -1197,8 +1204,8 @@
                         <p class="h4">Итого: 504675.64 грн.</p>
                     </div>
                     <div class=" float-right">
-                        <button role="button" class="btn btn-primary">Ваша цена</button>
-                        <button role="button" onclick="ShowCartErrorPopup();" class="btn btn-success">Заказать</button>
+                        <button role="button" class="btn btn-secondary">Ваша цена</button>
+                        <button role="button" onclick="ShowCartErrorPopup();" class="btn btn-primary">Заказать</button>
                         <button role="button" class="btn btn-danger">Удалить все</button>
                     </div>
                 </div>
