@@ -1211,7 +1211,7 @@
 
 <div class="modal fade " id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModallLongTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg product-modal" role="document">
-        <div class="modal-content">
+        <div class="modal-content ">
             <div class="modal-header">
                 <h5 class="modal-title" id="productModalLongTitle">Фломастеры Centropen TEXTILE 2739, 6 шт.</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -1226,7 +1226,7 @@
                     <div class="article mb-2">Артикул: 1120120</div>
                     <div class="row mb-2">
                         <div class="col-md-5 col-lg-4 float-left"><div class="qty">Количество: </div></div>
-                        <div class="col-md-4 col-lg-3 float-left"> <input type="number" class="form-control" value="12"></div>
+                        <div class="col-md-4 col-lg-3 float-left"> <input class="qty-popup form-control" type="number" value="12"></div>
                     </div>
                     <div class="residue mb-4">Свободный остаток: 3613 шт</div>
                     <div class="total h3">Итого<span class="ml-2">126.56 грн</span></div>
@@ -1240,15 +1240,15 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button role="button" class="btn btn-primary add-to-wishlist">
+                <button role="button" class="btn btn-primary add-to-wishlist wishlist-btn" data-added="false">
                     <i class="fa fa-star-o" aria-hidden="true"></i> В избранное</button>
 
-                    <!--add to wish list or delete to wish list button-->
+                    <!--add to wish list OR delete to wish list button-->
 
-                <button role="button" class="btn btn-warning add-to-wishlist">
+                <button role="button" class="btn btn-warning add-to-wishlist wishlist-btn" data-added="true">
                     <i class="fa fa-star-o" aria-hidden="true"></i> Удалить из избранного</button>
 
-                <button role="button" class="add-to-cart btn btn-primary">
+                <button role="button" class="add-to-cart btn btn-primary cart-btn" data-added="false">
                     <i class="fa fa-cart-arrow-down" aria-hidden="true"></i> В корзину</button>
             </div>
         </div>

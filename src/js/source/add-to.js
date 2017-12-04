@@ -17,15 +17,29 @@ $(function () {
     });
 
 
-    $('.cart-btn').popover({
+    $('.cart-btn[data-added="false"]').popover({
         title: 'Товар добавлен в корзину',
         html: true,
         content: 'Товаров в корзине: 14<br>Сума: 1258 грн<br><a href="#">Перейти в корзину</a>',
         trigger: 'manual'
     });
 
-    $('.wishlist-btn').popover({
+    $('.cart-btn[data-added="true"]').popover({
+        title: 'Товар удален из корзины',
+        html: true,
+        content: 'Товаров в корзине: 14<br>Сума: 1258 грн<br><a href="#">Перейти в корзину</a>',
+        trigger: 'manual'
+    });
+
+    $('.wishlist-btn[data-added="false"]').popover({
         title: 'Товар добавлен в избранное',
+        html: true,
+        content: 'Товаров в избранном: 14<br><a href="#">Перейти в избранное</a>',
+        trigger: 'manual'
+    });
+
+    $('.wishlist-btn[data-added="true"]').popover({
+        title: 'Товар удален из избранного',
         html: true,
         content: 'Товаров в избранном: 14<br><a href="#">Перейти в избранное</a>',
         trigger: 'manual'
