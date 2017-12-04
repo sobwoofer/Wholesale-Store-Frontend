@@ -24,7 +24,7 @@ $(function () {
         trigger: 'manual'
     });
 
-    $('.cart-btn[data-added="true"]').popover({
+    $('.remove-from-cart, .cart-btn[data-added="true"]').popover({
         title: 'Товар удален из корзины',
         html: true,
         content: 'Товаров в корзине: 14<br>Сума: 1258 грн<br><a href="#">Перейти в корзину</a>',

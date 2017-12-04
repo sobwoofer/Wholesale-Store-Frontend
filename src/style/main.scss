@@ -20,9 +20,9 @@
 @import 'modules/top-catalog';
 @import 'modules/mobile-catalog';
 @import 'modules/filter';
-@import 'modules/product-modal';
+
 @import 'modules/live-search-dropdown';
-@import 'modules/status-modal';
+
 @import 'modules/colors';
 @import 'modules/styled-radio';
 
@@ -35,6 +35,12 @@
 @import 'pages-content/product-list';
 @import 'pages-content/orders';
 @import 'pages-content/categories';
+
+// MODALS IMPORT
+//==========================
+@import 'modals/cart-error-modal';
+@import 'modals/status-modal';
+@import 'modals/product-modal';
 
 // MEDIA IMPORT
 //==========================
