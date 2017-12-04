@@ -25,13 +25,14 @@ body {
     font-size: 15px;
     .navbar-nav {
       .nav-item {
-        a {
-          //position: relative;
+        a.nav-link:hover {
+          color: #049;
         }
         .badge {
           position: absolute;
           top: -2px;
           right: 10px;
+          background-color: #049;
         }
       }
     }
@@ -74,4 +75,16 @@ body {
 
 .icon-button {
   font-size: 20px;
+}
+
+a:hover, .nav-link:hover {
+  color: #049;
+}
+
+.navbar-light {
+  .navbar-nav {
+    .nav-link:hover {
+      color: #049;
+    }
+  }
 }
