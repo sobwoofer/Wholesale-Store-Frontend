@@ -31,12 +31,7 @@ $(function () {
 });
 
 
-//menu button
-$(function () {
-    $('.catalog-btn').click(function (e) {
-        $('.second-menu .catalog').toggleClass('active')
-    });
-});
+
 
 
 // add to cart and add to wish list
@@ -48,6 +43,10 @@ $(function () {
 function ShowCartErrorPopup() {
     $('#cartErrorPopup').modal('show');
 }
+
+
+// add catalog menu script
+//= source/top-catalog.js
 
 //categories border with auto row height
 //= source/categories-auto-height.js
