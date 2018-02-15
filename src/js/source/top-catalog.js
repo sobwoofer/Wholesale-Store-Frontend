@@ -30,7 +30,7 @@ $(function () {
                 $(thisItem).toggleClass('active');
 
                 if ($(thisItem).hasClass('active')) {
-                    $('.sub_menu', thisItem).fadeIn(100);
+                    $('.sub_menu', thisItem).show();
                     console.log('sub menu toggle');
                     // if (menuGrid){
                     //     $('.grid').masonry('destroy');
@@ -42,11 +42,17 @@ $(function () {
                     window.menuGrid = $('.grid').masonry({
                         columnWidth: 280,
                         itemSelector: '.item',
-                        isFitWidth: true
+                        isFitWidth: true,
                     });
                 } else {
-                    $('.sub_menu', thisItem).fadeOut(150);
+                    setTimeout(function(){
+                        if (!$(thisItem).is(":hover").length){
+                            $('.sub_menu', thisItem).hide();
+                        }
+                    }, 20);
+
                 }
+
             }
         }, 200);
     });
