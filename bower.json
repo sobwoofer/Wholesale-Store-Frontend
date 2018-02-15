@@ -18,6 +18,7 @@
     "font-awesome": "4.*",
     "tether": "^1.4.1",
     "slick-carousel": "^1.8.0",
-    "timecircles": "^1.5.3"
+    "timecircles": "^1.5.3",
+    "masonry-layout": "^4.2.1"
   }
 }

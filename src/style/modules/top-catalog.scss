@@ -130,13 +130,14 @@
       list-style: none;
       padding: 3px 5px;
       border-radius: 8px;
+      padding-left: 15px;
       &:hover {
         background: #f0f0f0;
         border-radius: 0px;
       }
       &:hover ul {
-        display: block;
-        padding-left: 15px;
+        //display: block;
+
       }
 
       a, .menu__link {
@@ -188,8 +189,11 @@
         background-color: #fff;
         margin-left: 20px;
         border-radius: 8px;
+        padding-left: 15px;
         &__title {
           background-color: transparent;
+          font-weight: bold;
+          color: #00306b;
           &:hover {
             background-color: transparent;
           }
@@ -201,16 +205,83 @@
           &:hover {
             background-color: transparent;
           }
-          &:after {
-            content: ' ';
-            position: absolute;
-            top: 50%;
-            right: 0px;
-            margin-top: 0;
-            border: 5px solid transparent;
-            border-top: 5px solid #003399;
-          }
+          //&:after {
+          //  content: ' ';
+          //  position: absolute;
+          //  top: 50%;
+          //  right: 0px;
+          //  margin-top: 0;
+          //  border: 5px solid transparent;
+          //  border-top: 5px solid #003399;
+          //}
         }
+        //grid menu
+        .grid-container {
+          position: relative;
+          width: 100%;
+          overflow: hidden;
+          transition: all 0.5s;
+          -webkit-transition: all 0.5s;
+        }
+        .toggle {
+          text-align: center;
+          padding: 0;
+          color: white;
+        }
+
+        .toggle li {
+          display: inline;
+          padding: 0 60px;
+        }
+
+        .toggle label {
+          font-size: 1.2em;
+          padding: 0 10px;
+        }
+
+        .grid {
+          margin: 0 auto;
+        }
+
+        .item {
+          color: white;
+          display: table;
+          font-size: 1.4em;
+          text-align: center;
+          margin: 5px;
+          width: 33%;
+        }
+
+        .i1, .i3, .i6, .i7  {
+          background: #2ecc71;
+          height: 280px;
+        }
+
+        .i2, .i4, .i5, .i8 {
+          background: #e74c3c;
+          height: 180px;
+        }
+
+        .i9, .i10, .i11, .i12, .i13, .i14, .i15 {
+          background: #e74c3c;
+          height: 180px;
+        }
+
+        .i4 {
+          height: 349px;
+        }
+
+        .expand {
+          transition: width 0.5s, height 0.5s, left 0.5s, top 0.5s;
+          -webkit-transition: width 0.5s, height 0.5s, left 0.5s, top 0.5s;
+          height: 100%;
+          width: 100%;
+          left: 0 !important;
+          top: 0 !important;
+          z-index: 99;
+          text-indent: -9999px;
+        }
+        //grid menu
       }
     }
   }

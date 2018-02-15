@@ -34,6 +34,7 @@
     <script src="../libs/tether/dist/js/tether.min.js"></script>
     <script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../libs/timecircles/inc/TimeCircles.js"></script>
+    <script src="../libs/masonry-layout/dist/masonry.pkgd.min.js"></script>
 
     <link rel="stylesheet" href="../libs/jquery-ui/themes/base/jquery-ui.min.css">
     <link rel="stylesheet" href="../libs/tether/dist/css/tether.min.css">
@@ -402,38 +403,87 @@
                                     <li class="menu__item">
                                         <a class="menu__link" href="#">Бумага и изделия из бумаги</a>
                                         <ul class="sub_menu">
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <a class="sub_menu__title" href="#">Бумага офисная</a>
-                                                    <a class="sub_menu__title" href="#">Конверты</a>
-                                                    <li class="menu__item"><a class="sub_menu__link" href="#">Бухгалтерская документация</a>
-                                                        <ul class="menu menu_flat">
-                                                            <li class="menu__item"><a class="menu__link menu__link_flat" href="#">Бухгалтерские бланки</a></li>
-                                                            <li class="menu__item"><a class="menu__link menu__link_flat" href="#">Бухгалтерские книги</a></li>
-                                                        </ul>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <a class="sub_menu__title" href="#">Бумага офисная</a>
-                                                    <a class="sub_menu__title" href="#">Конверты</a>
-                                                    <li class="menu__item"><a class="sub_menu__link" href="#">Бухгалтерская документация</a>
-                                                        <ul class="menu menu_flat">
-                                                            <li class="menu__item"><a class="menu__link menu__link_flat" href="#">Бухгалтерские бланки</a></li>
-                                                            <li class="menu__item"><a class="menu__link menu__link_flat" href="#">Бухгалтерские книги</a></li>
-                                                        </ul>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <a class="sub_menu__title" href="#">Бумага офисная</a>
-                                                    <a class="sub_menu__title" href="#">Конверты</a>
-                                                    <li class="menu__item"><a class="sub_menu__link" href="#">Бухгалтерская документация</a>
-                                                        <ul class="menu menu_flat">
-                                                            <li class="menu__item"><a class="menu__link menu__link_flat" href="#">Бухгалтерские бланки</a></li>
-                                                            <li class="menu__item"><a class="menu__link menu__link_flat" href="#">Бухгалтерские книги</a></li>
-                                                        </ul>
+                                            <div class="row grid-container">
+                                                <div class="grid">
+                                                    <div class="item">
+                                                        <a class="sub_menu__title" href="#">Бумага офисная</a>
+                                                        <a class="sub_menu__title" href="#">Конверты</a>
+                                                        <li class="">
+                                                            <a class="sub_menu__link" href="#">Бухгалтерская документация</a>
+                                                            <a class="sub_menu__link" href="#">Бухгалтерская документация</a>
+                                                            <a class="sub_menu__link" href="#">Бухгалтерская документация</a>
+                                                            <ul class="menu menu_flat">
+                                                                <li class="menu__item"><a class="menu__link menu__link_flat" href="#">Бухгалтерские бланки</a></li>
+                                                                <li class="menu__item"><a class="menu__link menu__link_flat" href="#">Бухгалтерские книги</a></li>
+                                                                <li class="menu__item"><a class="menu__link menu__link_flat" href="#">Бухгалтерские книги</a></li>
+                                                                <li class="menu__item"><a class="menu__link menu__link_flat" href="#">Бухгалтерские книги</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </div>
+                                                    <div class="item">
+                                                        <a class="sub_menu__title" href="#">Бумага офисная</a>
+                                                        <a class="sub_menu__title" href="#">Бумага офисная</a>
+                                                        <a class="sub_menu__title" href="#">Конверты</a>
+                                                        <a class="sub_menu__title" href="#">Конверты</a>
+                                                        <a class="sub_menu__title" href="#">Конверты</a>
+                    
+                                                    </div>
+                                                    <div class="item">
+                                                        <a class="sub_menu__title" href="#">Бумага офисная</a>
+                                                        <a class="sub_menu__title" href="#">Конверты</a>
+                                                        <li class="">
+                                                            <a class="sub_menu__link" href="#">Бухгалтерская документация</a>
+                                                            <ul class="menu menu_flat">
+                                                                <li class="menu__item"><a class="menu__link menu__link_flat" href="#">Бухгалтерские бланки</a></li>
+                                                                <li class="menu__item"><a class="menu__link menu__link_flat" href="#">Бухгалтерские книги</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </div>
+                                                    <div class="item">
+                                                        <a class="sub_menu__title" href="#">Бумага офисная</a>
+                                                        <a class="sub_menu__title" href="#">Конверты</a>
+                                                        <li class=""><a class="sub_menu__link" href="#">Бухгалтерская документация</a>
+                                                            <ul class="menu menu_flat">
+                                                                <li class="menu__item"><a class="menu__link menu__link_flat" href="#">Бухгалтерские бланки</a></li>
+                                                                <li class="menu__item"><a class="menu__link menu__link_flat" href="#">Бухгалтерские книги</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </div>
+                    
+                                                    <div class="item">
+                                                        <a class="sub_menu__title" href="#">Бумага офисная</a>
+                                                        <a class="sub_menu__title" href="#">Конверты</a>
+                                                        <li class=""><a class="sub_menu__link" href="#">Бухгалтерская документация</a>
+                                                            <ul class="menu menu_flat">
+                                                                <li class="menu__item"><a class="menu__link menu__link_flat" href="#">Бухгалтерские бланки</a></li>
+                                                                <li class="menu__item"><a class="menu__link menu__link_flat" href="#">Бухгалтерские книги</a></li>
+                                                                <li class="menu__item"><a class="menu__link menu__link_flat" href="#">Бухгалтерские книги</a></li>
+                                                                <li class="menu__item"><a class="menu__link menu__link_flat" href="#">Бухгалтерские книги</a></li>
+                                                                <li class="menu__item"><a class="menu__link menu__link_flat" href="#">Бухгалтерские книги</a></li>
+                                                                <li class="menu__item"><a class="menu__link menu__link_flat" href="#">Бухгалтерские книги</a></li>
+                                                                <li class="menu__item"><a class="menu__link menu__link_flat" href="#">Бухгалтерские книги</a></li>
+                                                                <li class="menu__item"><a class="menu__link menu__link_flat" href="#">Бухгалтерские книги</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </div>
+                                                    <div class="item">
+                                                        <a class="sub_menu__title" href="#">Бумага офисная</a>
+                                                        <a class="sub_menu__title" href="#">Конверты</a>
+                                                        <a class="sub_menu__title" href="#">Конверты</a>
+                                                        <a class="sub_menu__title" href="#">Конверты</a>
+                                                        <li class=""><a class="sub_menu__link" href="#">Бухгалтерская документация</a>
+                                                            <ul class="menu menu_flat">
+                                                                <li class="menu__item"><a class="menu__link menu__link_flat" href="#">Бухгалтерские бланки</a></li>
+                                                                <li class="menu__item"><a class="menu__link menu__link_flat" href="#">Бухгалтерские книги</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            </li>
+                    
                                         </ul>
                                     </li>
+                    
                                     <li class="menu__item">
                                         <a class="menu__link" href="#">Письменные принадлежности</a>
                                         <ul class="sub_menu">
