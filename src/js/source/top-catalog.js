@@ -31,7 +31,7 @@ $(function () {
 
                 if ($(thisItem).hasClass('active')) {
                     $('.sub_menu', thisItem).fadeIn(100);
-
+                    console.log('sub menu toggle');
                     // if (menuGrid){
                     //     $('.grid').masonry('destroy');
                     // }
